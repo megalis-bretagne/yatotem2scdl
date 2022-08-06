@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yatotem2scdl"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "lxml"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "mypy",
+    "pytest", "pytest-watch"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

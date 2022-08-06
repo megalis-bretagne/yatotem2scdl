@@ -1,0 +1,4009 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DocumentBudgetaire xmlns="http://www.minefi.gouv.fr/cp/demat/docbudgetaire">
+   <VersionSchema V="100"/>
+   <BlocEditeur xmlns:bl="http://www.berger-levrault.fr/demat/outils">
+      <CodeEditeur V="Berger-Levrault"/>
+      <bl:ProduitGF V="e.gf évolution - 16.51.00.03"/>
+      <bl:EchangeXML V="2022.04"/>
+   </BlocEditeur>
+   <VersionOutil outil="DSC_COMMON" version="30"/>
+   <VersionOutil outil="REMAT" version="2"/>
+   <Scellement md5="510797942562A3B9B230FEBCFA09EE6D" sha1="255771F36005A9F1D0BEEA812D30DD255C5AC561" date="2022-04-06T17:46:59.758+02:00"/>
+   <EnTeteDocBudgetaire>
+      <DteStr V="2022-04-06"/>
+      <LibellePoste V="TRESORERIE AURAY"/>
+      <IdPost V="056025"/>
+      <LibelleColl V="CRACH"/>
+      <IdColl V="21560046100010"/>
+      <NatCEPL V="Commune"/>
+      <Departement V="56"/>
+   </EnTeteDocBudgetaire>
+   <Budget>
+      <EnTeteBudget>
+         <LibelleEtab V="BUDGET PRINCIPAL"/>
+         <IdEtab V="21560046100010"/>
+         <CodColl V="520"/>
+         <CodInseeColl V="56046"/>
+         <CodBud V="00"/>
+         <Nomenclature V="M14-M14_COM_500_3500"/>
+      </EnTeteBudget>
+      <BlocBudget>
+         <NatDec V="01"/>
+         <Exer V="2022"/>
+         <ProjetBudget V="false"/>
+         <DteDec V="2022-04-04"/>
+         <DteDecEx V="2022-04-04"/>
+         <NatVote V="FcIc"/>
+         <OpeEquip V="false"/>
+         <VoteFormelChap V="false"/>
+         <TypProv V="2"/>
+         <BudgPrec V="1"/>
+         <ReprRes V="3"/>
+         <NatFonc V="1"/>
+         <CodTypBud V="P"/>
+      </BlocBudget>
+      <InformationsGenerales>
+         <Information Code="PopTot" V="3 446"/>
+         <Information Code="NbResSec" V="504"/>
+         <Information Code="PotFisc3T" V="0,00"/>
+         <Information Code="ValHab3T" V="0,00"/>
+         <Information Code="PotFiscTaxPro" V="0,00"/>
+         <Information Code="ValHabTaxPro" V="0,00"/>
+         <Information Code="MoyNatFiscTaxPro" V="0,00"/>
+         <Information Code="PotFisc4T" V="0,00"/>
+         <Information Code="PotFin4T" V="0,00"/>
+         <Information Code="ValHab4T" V="0,00"/>
+         <Information Code="MoyNatFin4T" V="0,00"/>
+         <Information Code="ValDepRFonc" V="730,46"/>
+         <Information Code="MoyNatDepRFonc" V="578,00"/>
+         <Information Code="ValProdImpo" V="490,81"/>
+         <Information Code="MoyNatProdImpo" V="314,00"/>
+         <Information Code="ValRecRFonc" V="894,54"/>
+         <Information Code="MoyNatRecRFonc" V="749,00"/>
+         <Information Code="ValDepEq" V="958,21"/>
+         <Information Code="MoyNatDepEq" V="277,00"/>
+         <Information Code="ValEncDettePop" V="603,33"/>
+         <Information Code="MoyNatEncDettePop" V="689,00"/>
+         <Information Code="ValDGFPop" V="146,26"/>
+         <Information Code="MoyNatDGFPop" V="150,00"/>
+         <Information Code="ValDepPers" V="48,80 %"/>
+         <Information Code="MoyNatDepPers" V="41,90 %"/>
+         <Information Code="ValCoefMobPotFisc" V="0,00 %"/>
+         <Information Code="MoyNatCoefMobPotFisc" V="0,00 %"/>
+         <Information Code="ValCoefMobFiscEl" V="0,00 %"/>
+         <Information Code="MoyNatCoefMobFiscEl" V="0,00 %"/>
+         <Information Code="ValDepFoncRemDette" V="86,13 %"/>
+         <Information Code="MoyNatDepFoncRemDette" V="89,00 %"/>
+         <Information Code="ValDepEqB" V="107,12 %"/>
+         <Information Code="MoyNatDepEqB" V="37,00 %"/>
+         <Information Code="ValEncDetteRecFonc" V="67,45 %"/>
+         <Information Code="MoyNatEncDetteRecFonc" V="92,10 %"/>
+         <Information Code="PotFisc" V="2 851 394,00"/>
+         <Information Code="PotFin" V="3 228 461,00"/>
+         <Information Code="ValHab" V="721,87"/>
+         <Information Code="MoyNatFisc" V="0,00"/>
+         <Information Code="MoyNatFin" V="817,33"/>
+      </InformationsGenerales>
+      <LigneBudget>
+         <Nature V="6413"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="40000.00"/>
+         <MtPropNouv V="42000.00"/>
+         <MtPrev V="42000.00"/>
+         <CredOuv V="42000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="40000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6237"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="20000.00"/>
+         <MtPropNouv V="30000.00"/>
+         <MtPrev V="30000.00"/>
+         <CredOuv V="30000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="20000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2117"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2804412"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="39095.20"/>
+         <MtPropNouv V="39095.98"/>
+         <MtPrev V="39095.98"/>
+         <CredOuv V="39095.98"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="39095.20" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6419"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="15000.00"/>
+         <MtPropNouv V="27500.00"/>
+         <MtPrev V="27500.00"/>
+         <CredOuv V="27500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21318"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="41546.00"/>
+         <MtRARPrec V="38936.00"/>
+         <MtPrev V="0.00"/>
+         <CredOuv V="38936.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="38200.00" Code="BudgetHorsRAR"/>
+         <MtSup V="38936.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2315"/>
+         <ContNat V="23"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="799200.00"/>
+         <MtRARPrec V="78450.58"/>
+         <MtPropNouv V="870000.00"/>
+         <MtPrev V="870000.00"/>
+         <CredOuv V="948450.58"/>
+         <OpBudg V="0"/>
+         <MtSup V="795000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="78450.58" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2135"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="40000.00"/>
+         <MtRARPrec V="6992.00"/>
+         <MtPropNouv V="322000.00"/>
+         <MtPrev V="322000.00"/>
+         <CredOuv V="328992.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="40000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="6992.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7398"/>
+         <ContNat V="014"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="2000.00"/>
+         <MtPrev V="2000.00"/>
+         <CredOuv V="2000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7472"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="11000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="11000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="10226"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="210000.00"/>
+         <MtPropNouv V="150000.00"/>
+         <MtPrev V="150000.00"/>
+         <CredOuv V="150000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="210000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2315"/>
+         <ContNat V="041"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="50000.00"/>
+         <MtPrev V="50000.00"/>
+         <CredOuv V="50000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="1"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2188"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="55597.00"/>
+         <MtPropNouv V="29500.00"/>
+         <MtPrev V="29500.00"/>
+         <CredOuv V="29500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="26500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="615221"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="8000.00"/>
+         <MtPropNouv V="8000.00"/>
+         <MtPrev V="8000.00"/>
+         <CredOuv V="8000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="8000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="744"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="3900.00"/>
+         <MtPrev V="3900.00"/>
+         <CredOuv V="3900.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21568"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7000.00"/>
+         <MtPropNouv V="43000.00"/>
+         <MtPrev V="43000.00"/>
+         <CredOuv V="43000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21578"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtRARPrec V="1297.00"/>
+         <MtPropNouv V="2000.00"/>
+         <MtPrev V="2000.00"/>
+         <CredOuv V="3297.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="1297.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="280422"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3335.23"/>
+         <MtPropNouv V="3270.00"/>
+         <MtPrev V="3270.00"/>
+         <CredOuv V="3270.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="3335.23" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7088"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="300.00"/>
+         <MtPropNouv V="300.00"/>
+         <MtPrev V="300.00"/>
+         <CredOuv V="300.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="300.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74751"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="1200.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6453"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="180000.00"/>
+         <MtPropNouv V="180000.00"/>
+         <MtPrev V="180000.00"/>
+         <CredOuv V="180000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="180000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74741"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6454"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1500.00"/>
+         <MtPropNouv V="1500.00"/>
+         <MtPrev V="1500.00"/>
+         <CredOuv V="1500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1326"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="133000.00"/>
+         <MtPrev V="133000.00"/>
+         <CredOuv V="133000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6135"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="6000.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="6000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6532"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="200.00"/>
+         <MtPropNouv V="200.00"/>
+         <MtPrev V="200.00"/>
+         <CredOuv V="200.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6064"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7000.00"/>
+         <MtPropNouv V="8000.00"/>
+         <MtPrev V="8000.00"/>
+         <CredOuv V="8000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="73224"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="71000.00"/>
+         <MtPropNouv V="85000.00"/>
+         <MtPrev V="85000.00"/>
+         <CredOuv V="85000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="71000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="10222"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="175000.00"/>
+         <MtPropNouv V="70000.00"/>
+         <MtPrev V="70000.00"/>
+         <CredOuv V="70000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="175000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="238"/>
+         <ContNat V="041"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="100000.00"/>
+         <MtPrev V="100000.00"/>
+         <CredOuv V="100000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="1"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2128"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="11650.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="11650.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2802"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="19035.86"/>
+         <MtPropNouv V="19035.86"/>
+         <MtPrev V="19035.86"/>
+         <CredOuv V="19035.86"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="19035.86" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6231"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="2500.00"/>
+         <MtPrev V="2500.00"/>
+         <CredOuv V="2500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74718"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPropNouv V="44000.00"/>
+         <MtPrev V="44000.00"/>
+         <CredOuv V="44000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="020"/>
+         <ContNat V="020"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="116958.17"/>
+         <MtPropNouv V="91624.91"/>
+         <MtPrev V="91624.91"/>
+         <CredOuv V="91624.91"/>
+         <OpBudg V="0"/>
+         <MtSup V="116958.17" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2182"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="22000.00"/>
+         <MtRARPrec V="1410.00"/>
+         <MtPropNouv V="45000.00"/>
+         <MtPrev V="45000.00"/>
+         <CredOuv V="46410.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="22000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="1410.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21538"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="147760.00"/>
+         <MtRARPrec V="130800.00"/>
+         <MtPropNouv V="6000.00"/>
+         <MtPrev V="6000.00"/>
+         <CredOuv V="136800.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="38000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="130800.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2031"/>
+         <ContNat V="20"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="80700.00"/>
+         <MtRARPrec V="8190.00"/>
+         <MtPropNouv V="72000.00"/>
+         <MtPrev V="72000.00"/>
+         <CredOuv V="80190.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="60000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="8190.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="002"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="835043.06"/>
+         <MtPropNouv V="400000.00"/>
+         <MtPrev V="400000.00"/>
+         <CredOuv V="400000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="835043.06" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7062"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="722"/>
+         <ContNat V="042"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="60000.00"/>
+         <MtPropNouv V="70000.00"/>
+         <MtPrev V="70000.00"/>
+         <CredOuv V="70000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="60000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="73211"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="427138.00"/>
+         <MtPropNouv V="430302.00"/>
+         <MtPrev V="430302.00"/>
+         <CredOuv V="430302.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="427138.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="65548"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5709.00"/>
+         <MtPropNouv V="5135.00"/>
+         <MtPrev V="5135.00"/>
+         <CredOuv V="5135.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5709.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2152"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="20000.00"/>
+         <MtPrev V="20000.00"/>
+         <CredOuv V="20000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1322"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="11000.00"/>
+         <MtPropNouv V="63860.00"/>
+         <MtPrev V="63860.00"/>
+         <CredOuv V="63860.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="11000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="615232"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="20000.00"/>
+         <MtPropNouv V="20000.00"/>
+         <MtPrev V="20000.00"/>
+         <CredOuv V="20000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="20000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6257"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5000.00"/>
+         <MtPropNouv V="5000.00"/>
+         <MtPrev V="5000.00"/>
+         <CredOuv V="5000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6284"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="700.00"/>
+         <MtPrev V="700.00"/>
+         <CredOuv V="700.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="61521"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="14000.00"/>
+         <MtPropNouv V="14000.00"/>
+         <MtPrev V="14000.00"/>
+         <CredOuv V="14000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="14000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="752"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="66000.00"/>
+         <MtPropNouv V="60000.00"/>
+         <MtPrev V="60000.00"/>
+         <CredOuv V="60000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="66000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6288"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10500.00"/>
+         <MtPropNouv V="16000.00"/>
+         <MtPrev V="16000.00"/>
+         <CredOuv V="16000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1641"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="445000.00"/>
+         <MtPrev V="445000.00"/>
+         <CredOuv V="445000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2313"/>
+         <ContNat V="23"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="155000.00"/>
+         <MtPropNouv V="695000.00"/>
+         <MtPrev V="695000.00"/>
+         <CredOuv V="695000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="100000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1068"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="691327.28"/>
+         <MtPropNouv V="1111404.25"/>
+         <MtPrev V="1111404.25"/>
+         <CredOuv V="1111404.25"/>
+         <OpBudg V="0"/>
+         <MtSup V="691327.28" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2111"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="320000.00"/>
+         <MtRARPrec V="4000.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="19000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="50000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="4000.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6067"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7280.00"/>
+         <MtPropNouv V="8480.00"/>
+         <MtPrev V="8480.00"/>
+         <CredOuv V="8480.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7280.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6531"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="80000.00"/>
+         <MtPropNouv V="81000.00"/>
+         <MtPrev V="81000.00"/>
+         <CredOuv V="81000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="80000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60636"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4500.00"/>
+         <MtPropNouv V="5000.00"/>
+         <MtPrev V="5000.00"/>
+         <CredOuv V="5000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7067"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="75000.00"/>
+         <MtPropNouv V="74600.00"/>
+         <MtPrev V="74600.00"/>
+         <CredOuv V="74600.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="75000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="238"/>
+         <ContNat V="23"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="50000.00"/>
+         <MtPrev V="50000.00"/>
+         <CredOuv V="50000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6226"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="19000.00"/>
+         <MtPropNouv V="12000.00"/>
+         <MtPrev V="12000.00"/>
+         <CredOuv V="12000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="19000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="20422"/>
+         <ContNat V="204"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="142050.00"/>
+         <MtRARPrec V="76869.00"/>
+         <MtPropNouv V="85000.00"/>
+         <MtPrev V="85000.00"/>
+         <CredOuv V="161869.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="97410.00" Code="BudgetHorsRAR"/>
+         <MtSup V="76869.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6541"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="200.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6336"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="14000.00"/>
+         <MtPropNouv V="15500.00"/>
+         <MtPrev V="15500.00"/>
+         <CredOuv V="15500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="14000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6251"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1500.00"/>
+         <MtPropNouv V="1500.00"/>
+         <MtPrev V="1500.00"/>
+         <CredOuv V="1500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6078"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="5600.00"/>
+         <MtPrev V="5600.00"/>
+         <CredOuv V="5600.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60631"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="20000.00"/>
+         <MtPropNouv V="25000.00"/>
+         <MtPrev V="25000.00"/>
+         <CredOuv V="25000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="20000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6533"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="3500.00"/>
+         <MtPropNouv V="3500.00"/>
+         <MtPrev V="3500.00"/>
+         <CredOuv V="3500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2184"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="2500.00"/>
+         <MtPropNouv V="8000.00"/>
+         <MtPrev V="8000.00"/>
+         <CredOuv V="8000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="2500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6184"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5000.00"/>
+         <MtPropNouv V="5000.00"/>
+         <MtPrev V="5000.00"/>
+         <CredOuv V="5000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="281532"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="960.00"/>
+         <MtPrev V="960.00"/>
+         <CredOuv V="960.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="66111"/>
+         <ContNat V="66"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="31000.00"/>
+         <MtPropNouv V="29000.00"/>
+         <MtPrev V="29000.00"/>
+         <CredOuv V="29000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="31000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70632"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2138"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="13258"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="47570.00"/>
+         <MtRARPrec V="40850.00"/>
+         <MtPropNouv V="11520.00"/>
+         <MtPrev V="11520.00"/>
+         <CredOuv V="52370.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="40850.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7478"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="63000.00"/>
+         <MtPropNouv V="50000.00"/>
+         <MtPrev V="50000.00"/>
+         <CredOuv V="50000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="63000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7718"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10.00"/>
+         <MtPropNouv V="10.00"/>
+         <MtPrev V="10.00"/>
+         <CredOuv V="10.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="615228"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1323"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="130077.30"/>
+         <MtRARPrec V="28989.60"/>
+         <MtPropNouv V="248249.00"/>
+         <MtPrev V="248249.00"/>
+         <CredOuv V="277238.60"/>
+         <OpBudg V="0"/>
+         <MtSup V="120000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="28989.60" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6456"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="3400.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3400.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21532"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6283"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4200.00"/>
+         <MtPropNouv V="4500.00"/>
+         <MtPrev V="4500.00"/>
+         <CredOuv V="4500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1641"/>
+         <ContNat V="16"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="140000.00"/>
+         <MtPropNouv V="133000.00"/>
+         <MtPrev V="133000.00"/>
+         <CredOuv V="133000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="140000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6161"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="23000.00"/>
+         <MtPropNouv V="17000.00"/>
+         <MtPrev V="17000.00"/>
+         <CredOuv V="17000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="23000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70388"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60622"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="16000.00"/>
+         <MtPropNouv V="20000.00"/>
+         <MtPrev V="20000.00"/>
+         <CredOuv V="20000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="16000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60623"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6282"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28051"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="6209.94"/>
+         <MtPropNouv V="6337.29"/>
+         <MtPrev V="6337.29"/>
+         <CredOuv V="6337.29"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="6209.94" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2183"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="35844.00"/>
+         <MtRARPrec V="7209.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="17209.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="30000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="7209.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60611"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7000.00"/>
+         <MtPropNouv V="7000.00"/>
+         <MtPrev V="7000.00"/>
+         <CredOuv V="7000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6458"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="2500.00"/>
+         <MtPropNouv V="2300.00"/>
+         <MtPrev V="2300.00"/>
+         <CredOuv V="2300.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="2500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60632"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="8000.00"/>
+         <MtPropNouv V="8000.00"/>
+         <MtPrev V="8000.00"/>
+         <CredOuv V="8000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="8000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2116"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtRARPrec V="15120.00"/>
+         <MtPrev V="0.00"/>
+         <CredOuv V="15120.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15120.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7473"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="3000.00"/>
+         <MtPrev V="3000.00"/>
+         <CredOuv V="3000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="615231"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6411"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="767000.00"/>
+         <MtPropNouv V="785000.00"/>
+         <MtPrev V="785000.00"/>
+         <CredOuv V="785000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="767000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60612"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="82000.00"/>
+         <MtPropNouv V="82000.00"/>
+         <MtPrev V="82000.00"/>
+         <CredOuv V="82000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="82000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="022"/>
+         <ContNat V="022"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="130842.56"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="130842.56" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6188"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="2500.00"/>
+         <MtPropNouv V="3000.00"/>
+         <MtPrev V="3000.00"/>
+         <CredOuv V="3000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="2500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6451"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="110000.00"/>
+         <MtPropNouv V="119000.00"/>
+         <MtPrev V="119000.00"/>
+         <CredOuv V="119000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="110000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6182"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="2400.00"/>
+         <MtPropNouv V="4200.00"/>
+         <MtPrev V="4200.00"/>
+         <CredOuv V="4200.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="2400.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6512"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="6000.00"/>
+         <MtPrev V="6000.00"/>
+         <CredOuv V="6000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="657362"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="6000.00"/>
+         <MtPropNouv V="4500.00"/>
+         <MtPrev V="4500.00"/>
+         <CredOuv V="4500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="6000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74121"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="60564.00"/>
+         <MtPropNouv V="61000.00"/>
+         <MtPrev V="61000.00"/>
+         <CredOuv V="61000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="60564.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6518"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="024"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="30000.00"/>
+         <MtPrev V="30000.00"/>
+         <CredOuv V="30000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28188"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="13078.44"/>
+         <MtPropNouv V="16595.40"/>
+         <MtPrev V="16595.40"/>
+         <CredOuv V="16595.40"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="13078.44" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6261"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="8500.00"/>
+         <MtPropNouv V="8500.00"/>
+         <MtPrev V="8500.00"/>
+         <CredOuv V="8500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="8500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="61524"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="15000.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6542"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="200.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6475"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="2500.00"/>
+         <MtPropNouv V="2500.00"/>
+         <MtPrev V="2500.00"/>
+         <CredOuv V="2500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="2500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7788"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6553"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="90390.00"/>
+         <MtPropNouv V="91000.00"/>
+         <MtPrev V="91000.00"/>
+         <CredOuv V="91000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="90390.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="673"/>
+         <ContNat V="67"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="6780.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="6780.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21312"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="8000.00"/>
+         <MtPropNouv V="41000.00"/>
+         <MtPrev V="41000.00"/>
+         <CredOuv V="41000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="8000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="021"/>
+         <ContNat V="021"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="1122542.55"/>
+         <MtPropNouv V="831571.18"/>
+         <MtPrev V="831571.18"/>
+         <CredOuv V="831571.18"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="1122542.55" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="001"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="182736.54"/>
+         <MtPrev V="182736.54"/>
+         <CredOuv V="182736.54"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2041582"/>
+         <ContNat V="204"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="134550.00"/>
+         <MtRARPrec V="15750.00"/>
+         <MtPrev V="0.00"/>
+         <CredOuv V="15750.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15750.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="10226"/>
+         <ContNat V="10"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="35000.00"/>
+         <MtPropNouv V="17000.00"/>
+         <MtPrev V="17000.00"/>
+         <CredOuv V="17000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="35000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6455"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="46500.00"/>
+         <MtPropNouv V="32000.00"/>
+         <MtPrev V="32000.00"/>
+         <CredOuv V="32000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="46500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="63512"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="9000.00"/>
+         <MtPropNouv V="12000.00"/>
+         <MtPrev V="12000.00"/>
+         <CredOuv V="12000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="9000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60628"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="200.00"/>
+         <MtPropNouv V="200.00"/>
+         <MtPrev V="200.00"/>
+         <CredOuv V="200.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="200.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6132"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="700.00"/>
+         <MtPropNouv V="1200.00"/>
+         <MtPrev V="1200.00"/>
+         <CredOuv V="1200.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="700.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6281"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="17730.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="17730.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6256"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="400.00"/>
+         <MtPropNouv V="400.00"/>
+         <MtPrev V="400.00"/>
+         <CredOuv V="400.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="400.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="61558"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="13000.00"/>
+         <MtPropNouv V="13000.00"/>
+         <MtPrev V="13000.00"/>
+         <CredOuv V="13000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="13000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="023"/>
+         <ContNat V="023"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1122542.55"/>
+         <MtPropNouv V="831571.18"/>
+         <MtPrev V="831571.18"/>
+         <CredOuv V="831571.18"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="1122542.55" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2112"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5000.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6338"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2804181"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="842.67"/>
+         <MtPropNouv V="842.67"/>
+         <MtPrev V="842.67"/>
+         <CredOuv V="842.67"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="842.67" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6247"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="32000.00"/>
+         <MtPropNouv V="32000.00"/>
+         <MtPrev V="32000.00"/>
+         <CredOuv V="32000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="32000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70846"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="7000.00"/>
+         <MtPropNouv V="7000.00"/>
+         <MtPrev V="7000.00"/>
+         <CredOuv V="7000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6156"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="36000.00"/>
+         <MtPropNouv V="36000.00"/>
+         <MtPrev V="36000.00"/>
+         <CredOuv V="36000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="36000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70878"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28183"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="17231.56"/>
+         <MtPropNouv V="13193.88"/>
+         <MtPrev V="13193.88"/>
+         <CredOuv V="13193.88"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="17231.56" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6817"/>
+         <ContNat V="68"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="16878"/>
+         <ContNat V="16"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5000.00"/>
+         <MtPropNouv V="5000.00"/>
+         <MtPrev V="5000.00"/>
+         <CredOuv V="5000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2315"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="30000.00"/>
+         <MtPropNouv V="20000.00"/>
+         <MtPrev V="20000.00"/>
+         <CredOuv V="20000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="30000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74127"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="58650.00"/>
+         <MtPropNouv V="58000.00"/>
+         <MtPrev V="58000.00"/>
+         <CredOuv V="58000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="58650.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="657358"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="6000.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="6000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60621"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="11000.00"/>
+         <MtPrev V="11000.00"/>
+         <CredOuv V="11000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="73111"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="1691343.00"/>
+         <MtPrev V="1691343.00"/>
+         <CredOuv V="1691343.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="611"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="240000.00"/>
+         <MtPropNouv V="255000.00"/>
+         <MtPrev V="255000.00"/>
+         <CredOuv V="255000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="240000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="001"/>
+         <ContNat V="001"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="64118.58"/>
+         <MtPrev V="0.00"/>
+         <MtReal V="64118.58"/>
+         <OpBudg V="0"/>
+         <MtSup V="64118.58" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6535"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5000.00"/>
+         <MtPropNouv V="5000.00"/>
+         <MtPrev V="5000.00"/>
+         <CredOuv V="5000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74834"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="49831.00"/>
+         <MtPropNouv V="51581.00"/>
+         <MtPrev V="51581.00"/>
+         <CredOuv V="51581.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="49831.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="678"/>
+         <ContNat V="67"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="74748"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60624"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1500.00"/>
+         <MtPropNouv V="1500.00"/>
+         <MtPrev V="1500.00"/>
+         <CredOuv V="1500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="65731"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="100.00"/>
+         <MtPropNouv V="100.00"/>
+         <MtPrev V="100.00"/>
+         <CredOuv V="100.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="100.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="637"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4500.00"/>
+         <MtPropNouv V="4500.00"/>
+         <MtPrev V="4500.00"/>
+         <CredOuv V="4500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6238"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6236"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6534"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7500.00"/>
+         <MtPropNouv V="7600.00"/>
+         <MtPrev V="7600.00"/>
+         <CredOuv V="7600.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6232"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="22000.00"/>
+         <MtPropNouv V="22000.00"/>
+         <MtPrev V="22000.00"/>
+         <CredOuv V="22000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="22000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2313"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="30000.00"/>
+         <MtPropNouv V="50000.00"/>
+         <MtPrev V="50000.00"/>
+         <CredOuv V="50000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="30000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7411"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="382275.00"/>
+         <MtPropNouv V="385000.00"/>
+         <MtPrev V="385000.00"/>
+         <CredOuv V="385000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="382275.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7083"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6042"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="3000.00"/>
+         <MtPrev V="3000.00"/>
+         <CredOuv V="3000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="281538"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="1798.54"/>
+         <MtPropNouv V="23933.61"/>
+         <MtPrev V="23933.61"/>
+         <CredOuv V="23933.61"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="1798.54" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6811"/>
+         <ContNat V="042"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="121395.62"/>
+         <MtPropNouv V="133854.82"/>
+         <MtPrev V="133854.82"/>
+         <CredOuv V="133854.82"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="121395.62" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6574"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="54085.00"/>
+         <MtPropNouv V="51553.00"/>
+         <MtPrev V="51553.00"/>
+         <CredOuv V="51553.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="54085.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="65888"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="5.00"/>
+         <MtPropNouv V="5.00"/>
+         <MtPrev V="5.00"/>
+         <CredOuv V="5.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6558"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="124739.33"/>
+         <MtPropNouv V="110000.00"/>
+         <MtPrev V="110000.00"/>
+         <CredOuv V="110000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="124739.33" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2151"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="4000.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7588"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="3000.00"/>
+         <MtPrev V="3000.00"/>
+         <CredOuv V="3000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70321"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6474"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="8000.00"/>
+         <MtPrev V="8000.00"/>
+         <CredOuv V="8000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="76238"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="10.00"/>
+         <MtPropNouv V="10.00"/>
+         <MtPrev V="10.00"/>
+         <CredOuv V="10.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="70631"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="1000.00"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="1000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6065"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="7500.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="7500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="617"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="8000.00"/>
+         <MtPropNouv V="12500.00"/>
+         <MtPrev V="12500.00"/>
+         <CredOuv V="12500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="8000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2158"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="20064.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7391171"/>
+         <ContNat V="014"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="1000.00"/>
+         <MtPrev V="1000.00"/>
+         <CredOuv V="1000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6068"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="50000.00"/>
+         <MtPropNouv V="65000.00"/>
+         <MtPrev V="65000.00"/>
+         <CredOuv V="65000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="50000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="60633"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="17000.00"/>
+         <MtPropNouv V="17000.00"/>
+         <MtPrev V="17000.00"/>
+         <CredOuv V="17000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="17000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28041582"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="12175.56"/>
+         <MtPropNouv V="8632.18"/>
+         <MtPrev V="8632.18"/>
+         <CredOuv V="8632.18"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="12175.56" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28182"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="3663.94"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="3663.94" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6262"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="18000.00"/>
+         <MtPropNouv V="20000.00"/>
+         <MtPrev V="20000.00"/>
+         <CredOuv V="20000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="18000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6228"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="500.00"/>
+         <MtPropNouv V="500.00"/>
+         <MtPrev V="500.00"/>
+         <CredOuv V="500.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2051"/>
+         <ContNat V="20"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="15000.00"/>
+         <MtRARPrec V="480.00"/>
+         <MtPropNouv V="15000.00"/>
+         <MtPrev V="15000.00"/>
+         <CredOuv V="15480.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="480.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="61551"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="12000.00"/>
+         <MtPropNouv V="12000.00"/>
+         <MtPrev V="12000.00"/>
+         <CredOuv V="12000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="12000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2115"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="445000.00"/>
+         <MtPrev V="445000.00"/>
+         <CredOuv V="445000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6218"/>
+         <ContNat V="012"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="30000.00"/>
+         <MtPropNouv V="40000.00"/>
+         <MtPrev V="40000.00"/>
+         <CredOuv V="40000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="30000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1321"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="12500.00"/>
+         <MtRARPrec V="54000.00"/>
+         <MtPropNouv V="13593.10"/>
+         <MtPrev V="13593.10"/>
+         <CredOuv V="67593.10"/>
+         <OpBudg V="0"/>
+         <MtSup V="12500.00" Code="BudgetHorsRAR"/>
+         <MtSup V="54000.00" Code="RARPrec"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21534"/>
+         <ContNat V="041"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="50000.00"/>
+         <MtPrev V="50000.00"/>
+         <CredOuv V="50000.00"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="1"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="21534"/>
+         <ContNat V="21"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="10000.00"/>
+         <MtPropNouv V="10000.00"/>
+         <MtPrev V="10000.00"/>
+         <CredOuv V="10000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="10000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="6227"/>
+         <ContNat V="011"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="3000.00"/>
+         <MtPropNouv V="3000.00"/>
+         <MtPrev V="3000.00"/>
+         <CredOuv V="3000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3000.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="657341"/>
+         <ContNat V="65"/>
+         <ArtSpe V="false"/>
+         <CodRD V="D"/>
+         <MtPropNouv V="6000.00"/>
+         <MtPrev V="6000.00"/>
+         <CredOuv V="6000.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7488"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="4500.00"/>
+         <MtPropNouv V="4000.00"/>
+         <MtPrev V="4000.00"/>
+         <CredOuv V="4000.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="4500.00" Code="BudgetHorsRAR"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="28184"/>
+         <ContNat V="040"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="4928.68"/>
+         <MtPropNouv V="1957.95"/>
+         <MtPrev V="1957.95"/>
+         <CredOuv V="1957.95"/>
+         <OpBudg V="1"/>
+         <TypOpBudg V="2"/>
+         <MtSup V="4928.68" Code="BudgetHorsRAR"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="7078"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPropNouv V="1553.00"/>
+         <MtPrev V="1553.00"/>
+         <CredOuv V="1553.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="F" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2188"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <ContOp V="93"/>
+         <CodRD V="D"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="6255.98" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1326"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="5780.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="5780.00" Code="BudgetHorsRAR"/>
+         <MtSup V="18334.00" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2313"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <ContOp V="93"/>
+         <CodRD V="D"/>
+         <MtBudgPrec V="25000.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="15000.00" Code="BudgetHorsRAR"/>
+         <MtSup V="188125.44" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2183"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <ContOp V="93"/>
+         <CodRD V="D"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="-6372.00" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1322"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="50000.00" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="2184"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <ContOp V="93"/>
+         <CodRD V="D"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="3337.44" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1323"/>
+         <LibCpte V="MAISON DE VIE ESPACE DE L'OCEAN"/>
+         <Operation V="93"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <MtSup V="100000.00" Code="MtOpeCumul"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <LigneBudget>
+         <Nature V="1321"/>
+         <LibCpte V="2 RUE DE LA FONTAINE"/>
+         <Operation V="92"/>
+         <ArtSpe V="false"/>
+         <CodRD V="R"/>
+         <MtBudgPrec V="7345.00"/>
+         <MtPrev V="0.00"/>
+         <OpBudg V="0"/>
+         <CaracSup V="1" Code="TypOpe"/>
+         <CaracSup V="I" Code="Section"/>
+      </LigneBudget>
+      <Annexes>
+         <DATA_EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2012"/>
+               <ObjEmpr V="LOGEMENTS SOCIAUX PL. LE MENE"/>
+               <MtEmprOrig V="175000.00"/>
+               <DureeRest V="20.33"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="01"/>
+               <LibOrgaPreteur V="ARKEA BANQUE E-I COLLECTIVITES"/>
+               <CodPeriodRemb V="I"/>
+               <CodPeriodRembDtVote V="I"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="R"/>
+               <CodTyptxDtVote V="R"/>
+               <TxActuaInit V="2.129"/>
+               <TxActua V="2.129"/>
+               <MtIntExer V="2379.04"/>
+               <MtCapitalExer V="5833.32"/>
+               <MtCapitalRestDu_01_01 V="119583.46"/>
+               <MtICNE V="220.34"/>
+               <MtCapitalRestDu_31_12 V="113750.14"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="29.92"/>
+               <NumContrat V="0421 0160849 01"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2011-01-20"/>
+               <Dt1RembInit V="2012-08-30"/>
+               <Txinit V="3.340"/>
+               <DureeContratInit V="30.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="175000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2017"/>
+               <ObjEmpr V="CONSTRUCTION ESPACE OCEAN"/>
+               <MtEmprOrig V="730000.00"/>
+               <DureeRest V="15.08"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="01"/>
+               <LibOrgaPreteur V="LA BANQUE POSTALE"/>
+               <CodPeriodRemb V="I"/>
+               <CodPeriodRembDtVote V="I"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="1.535"/>
+               <TxActua V="1.535"/>
+               <MtIntExer V="8331.65"/>
+               <MtCapitalExer V="33903.47"/>
+               <MtCapitalRestDu_01_01 V="575624.78"/>
+               <MtICNE V="1336.25"/>
+               <MtCapitalRestDu_31_12 V="541721.31"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="19.75"/>
+               <NumContrat V="MON514277EUR/0514956/001/1"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2016-12-13"/>
+               <Dt1RembInit V="2017-05-01"/>
+               <Txinit V="1.480"/>
+               <DureeContratInit V="20.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="730000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2017"/>
+               <ObjEmpr V="CONSTRUCTION ESPACE VIE OCEAN"/>
+               <MtEmprOrig V="1470000.00"/>
+               <DureeRest V="15.25"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGNAT"/>
+               <CodPeriodRemb V="I"/>
+               <CodPeriodRembDtVote V="I"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="1.498"/>
+               <TxActua V="1.498"/>
+               <MtIntExer V="17167.43"/>
+               <MtCapitalExer V="67976.37"/>
+               <MtCapitalRestDu_01_01 V="1176325.64"/>
+               <MtICNE V="4133.13"/>
+               <MtCapitalRestDu_31_12 V="1108349.27"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="20.08"/>
+               <NumContrat V="0284467-PRET N°58523"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2016-12-13"/>
+               <Dt1RembInit V="2017-07-01"/>
+               <Txinit V="1.500"/>
+               <DureeContratInit V="20.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="1470000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2016"/>
+               <ObjEmpr V="RENOVATION LOGEMENTS 2 RUE DE LA FONTAINE"/>
+               <MtEmprOrig V="50000.00"/>
+               <DureeRest V="9.58"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGNAT"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="0.600"/>
+               <TxActua V="0.600"/>
+               <MtIntExer V="101.24"/>
+               <MtCapitalExer V="3329.38"/>
+               <MtCapitalRestDu_01_01 V="33746.84"/>
+               <MtICNE V="101.39"/>
+               <MtCapitalRestDu_31_12 V="30417.46"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="14.92"/>
+               <NumContrat V="PLAI02-SPFR-5149327"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2016-07-25"/>
+               <Dt1RembInit V="2017-08-01"/>
+               <Txinit V="0.550"/>
+               <DureeContratInit V="15.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="50000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2016"/>
+               <ObjEmpr V="RENOVATION LOGEMENTS 2 RUE DE LA FONTAINE"/>
+               <MtEmprOrig V="100000.00"/>
+               <DureeRest V="9.58"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGNAT"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="1.398"/>
+               <TxActua V="1.398"/>
+               <MtIntExer V="756.73"/>
+               <MtCapitalExer V="6545.66"/>
+               <MtCapitalRestDu_01_01 V="68793.62"/>
+               <MtICNE V="414.98"/>
+               <MtCapitalRestDu_31_12 V="62247.96"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="14.92"/>
+               <NumContrat V="PLUS02 SPRF5149326"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2016-07-25"/>
+               <Dt1RembInit V="2017-08-01"/>
+               <Txinit V="1.350"/>
+               <DureeContratInit V="15.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="100000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="01"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <CodArticle V="1641"/>
+               <LibCpte V="Emprunts en euros"/>
+               <AnEncaisse V="2018"/>
+               <ObjEmpr V="CONSTRUCTION ALSH ESPACE OCEAN"/>
+               <MtEmprOrig V="150000.00"/>
+               <DureeRest V="6.58"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE ALLOCATIONS FAMILIALES"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="0.000"/>
+               <TxActua V="0.000"/>
+               <MtCapitalExer V="15000.00"/>
+               <MtCapitalRestDu_01_01 V="105000.00"/>
+               <MtCapitalRestDu_31_12 V="90000.00"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="10"/>
+               <NumContrat V="2016-270"/>
+               <IndSousJacent V="1"/>
+               <IndSousJacentDtVote V="1"/>
+               <Structure V="A"/>
+               <StructureDtVote V="A"/>
+               <DtSignInit V="2016-11-18"/>
+               <Dt1RembInit V="2019-08-01"/>
+               <Txinit V="0.000"/>
+               <DureeContratInit V="10.00"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="150000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2018"/>
+               <ObjEmpr V="HLM MESANGE"/>
+               <MtEmprOrig V="42662.90"/>
+               <DureeRest V="19"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGN"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="R"/>
+               <CodTyptxDtVote V="R"/>
+               <TxActuaInit V="1.550"/>
+               <TxActua V="1.300"/>
+               <MtIntExer V="477.31"/>
+               <MtCapitalExer V="2007.10"/>
+               <MtCapitalRestDu_01_01 V="36716.20"/>
+               <MtCapitalRestDu_31_12 V="34709.10"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="I"/>
+               <DureeAnn V="22.75"/>
+               <NumContrat V="CDC / 1327835"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="42662.90"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2010"/>
+               <ObjEmpr V="HLM LES AJONCS PLUS"/>
+               <MtEmprOrig V="345500.00"/>
+               <DureeRest V="27"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGN"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="V"/>
+               <CodTyptxDtVote V="V"/>
+               <TxActuaInit V="3.100"/>
+               <TxActua V="1.100"/>
+               <MtIntExer V="2935.71"/>
+               <MtCapitalExer V="8190.82"/>
+               <MtCapitalRestDu_01_01 V="266882.70"/>
+               <MtCapitalRestDu_31_12 V="258691.88"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="I"/>
+               <DureeAnn V="39.08"/>
+               <NumContrat V="CDC/1130285"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="345500.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2009"/>
+               <ObjEmpr V="HLM LES AJONCS PLAIB"/>
+               <MtEmprOrig V="30500.00"/>
+               <DureeRest V="27"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGNAT"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="R"/>
+               <CodTyptxDtVote V="R"/>
+               <TxActuaInit V="0.000"/>
+               <TxActua V="0.000"/>
+               <MtCapitalExer V="788.45"/>
+               <MtCapitalRestDu_01_01 V="22076.56"/>
+               <MtCapitalRestDu_31_12 V="21288.11"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="I"/>
+               <DureeAnn V="40.08"/>
+               <NumContrat V="CDC/1130287"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="30500.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2011"/>
+               <ObjEmpr V="HLM LE POULENO PLAI"/>
+               <MtEmprOrig V="79250.00"/>
+               <DureeRest V="29.58"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGN"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="R"/>
+               <CodTyptxDtVote V="R"/>
+               <TxActuaInit V="0.300"/>
+               <TxActua V="0.300"/>
+               <MtIntExer V="186.93"/>
+               <MtCapitalExer V="1988.08"/>
+               <MtCapitalRestDu_01_01 V="62310.67"/>
+               <MtCapitalRestDu_31_12 V="60322.59"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="I"/>
+               <DureeAnn V="40.08"/>
+               <NumContrat V="CDC/1202091"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="79250.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2011"/>
+               <ObjEmpr V="HLM LE POULENO PLUS"/>
+               <MtEmprOrig V="150000.00"/>
+               <DureeRest V="29.58"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="CAISSE DES DEPOTS ET CONSIGNAT"/>
+               <CodPeriodRemb V="A"/>
+               <CodPeriodRembDtVote V="A"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="R"/>
+               <CodTyptxDtVote V="R"/>
+               <TxActuaInit V="1.100"/>
+               <TxActua V="1.100"/>
+               <MtIntExer V="1342.11"/>
+               <MtCapitalExer V="3454.92"/>
+               <MtCapitalRestDu_01_01 V="122009.97"/>
+               <MtCapitalRestDu_31_12 V="118555.05"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="I"/>
+               <DureeAnn V="40.08"/>
+               <NumContrat V="CDC/1202092"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="150000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2013"/>
+               <ObjEmpr V="AMISEP CONSTRUCTION FOYER 28 CHAMBRES"/>
+               <MtEmprOrig V="110260.00"/>
+               <DureeRest V="5.92"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="001 DROITS DE PLACE CRACH"/>
+               <CodPeriodRemb V="M"/>
+               <CodPeriodRembDtVote V="M"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="2.950"/>
+               <TxActua V="2.950"/>
+               <MtIntExer V="1428.17"/>
+               <MtCapitalExer V="7677.28"/>
+               <MtCapitalRestDu_01_01 V="51912.14"/>
+               <MtCapitalRestDu_31_12 V="44234.86"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="15.08"/>
+               <NumContrat V="CE/ 8316775"/>
+               <IndSousJacentDtVote V="1"/>
+               <StructureDtVote V="A"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="110260.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="09"/>
+               <CodProfilAmort V="X"/>
+               <CodProfilAmortDtVote V="X"/>
+               <ProfilAmort V="Echéance constante"/>
+               <AnEncaisse V="2018"/>
+               <ObjEmpr V="TRAVAUX ECOLE ST JOSEPH SALLE POLYVALENTE"/>
+               <MtEmprOrig V="30000.00"/>
+               <DureeRest V="3.17"/>
+               <DureeRestInit V="0"/>
+               <DureeRestReneg V="0"/>
+               <CodTypPreteur V="03"/>
+               <LibOrgaPreteur V="001 DROITS DE PLACE CRACH"/>
+               <CodPeriodRemb V="I"/>
+               <CodPeriodRembDtVote V="I"/>
+               <CodPeriodRembReneg V="X"/>
+               <CodTyptxInit V="F"/>
+               <CodTyptxDtVote V="F"/>
+               <TxActuaInit V="0.750"/>
+               <TxActua V="0.750"/>
+               <MtIntExer V="101.89"/>
+               <MtCapitalExer V="4301.31"/>
+               <MtCapitalRestDu_01_01 V="15196.71"/>
+               <MtCapitalRestDu_31_12 V="10895.40"/>
+               <NomBenefEmprGaranti V="CRACH"/>
+               <CodTypEmprGaranti V="01"/>
+               <CodNatEmpr V="F"/>
+               <DureeAnn V="7.08"/>
+               <NumContrat V="CMB/ DD119735774"/>
+               <CodTypTxReneg V="X"/>
+               <CodProfilAmortReneg V="X"/>
+               <MtEmprReneg V="30000.00"/>
+            </EMPRUNT>
+            <EMPRUNT>
+               <CodTypEmpr V="10"/>
+               <TotGarEchoirExer V="34880.06"/>
+               <AnnuitNetDette V="160847.18"/>
+               <RReelFon V="3082599.00"/>
+            </EMPRUNT>
+         </DATA_EMPRUNT>
+         <DATA_CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ENTENTE SPORT CRACHOISE FOOT"/>
+               <MtSubv V="4000.00"/>
+               <LibPrestaNat V="SUBVENTION FOOT"/>
+               <DenomOuNumSubv V="01"/>
+               <ObjSubv V="SUBVENTION FOOT"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="TENNIS CLUB DE CRACH"/>
+               <MtSubv V="2800.00"/>
+               <LibPrestaNat V="SUBVENTION TENNIS"/>
+               <DenomOuNumSubv V="02"/>
+               <ObjSubv V="SUBVENTION TENNIS"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="CAP HANDBALL-PAHB"/>
+               <MtSubv V="1800.00"/>
+               <LibPrestaNat V="SUBVENTION HANDBALL"/>
+               <DenomOuNumSubv V="03"/>
+               <ObjSubv V="SUBVENTION HANDBALL"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="CENTRE FAMILIAL CRACHOIS"/>
+               <MtSubv V="1000.00"/>
+               <LibPrestaNat V="SUBVENTION CFC"/>
+               <DenomOuNumSubv V="04"/>
+               <ObjSubv V="SUBVENTION CFC"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="COMITE DES FETES"/>
+               <MtSubv V="1600.00"/>
+               <LibPrestaNat V="SUBVENTION COMITE DES FETES"/>
+               <DenomOuNumSubv V="05"/>
+               <ObjSubv V="SUBVENTION COMITE DES FETES"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="CERCLE CELTIQUE DE CRACH"/>
+               <MtSubv V="800.00"/>
+               <LibPrestaNat V="SUBVENTION CERCLE CELTIQUE"/>
+               <DenomOuNumSubv V="06"/>
+               <ObjSubv V="SUBVENTION CERCLE CELTIQUE"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ENTRAIDE LOISIRS RETRAITES"/>
+               <MtSubv V="600.00"/>
+               <LibPrestaNat V="SUBVENTION ENTRAIDE ET LOISIRS RETRAITES CRACH"/>
+               <DenomOuNumSubv V="07"/>
+               <ObjSubv V="SUBVENTION ENTRAIDE ET LOISIRS RETRAITES CRACH"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="LES CRACHOPHONIES"/>
+               <MtSubv V="400.00"/>
+               <LibPrestaNat V="SUBVENTION CRACHOPHONIES CRACHOMEDIES"/>
+               <DenomOuNumSubv V="08"/>
+               <ObjSubv V="SUBVENTION CRACHOPHONIES CRACHOMEDIES"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="TRINI CHOEUR"/>
+               <MtSubv V="150.00"/>
+               <LibPrestaNat V="SUBVENTION TRNICHOEUR"/>
+               <DenomOuNumSubv V="09"/>
+               <ObjSubv V="SUBVENTION TRNICHOEUR"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="U3"/>
+               <LibOrgaBenef V="OCCE COOPERATIVE SCOLAIRE ECOL"/>
+               <MtSubv V="3000.00"/>
+               <LibPrestaNat V="SUBVENTION ACTIVITES NAUTIQUES ECOLE DES 2 RIVIERES"/>
+               <DenomOuNumSubv V="10"/>
+               <ObjSubv V="SUBVENTION ACTIVITES NAUTIQUES ECOLE DES 2 RIVIERES"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="APEL ECOLE ST JOSEPH"/>
+               <MtSubv V="2200.00"/>
+               <LibPrestaNat V="SUBVENTION ACTIVITES NAUTIQUES ECOLE ST JOSEPH"/>
+               <DenomOuNumSubv V="11"/>
+               <ObjSubv V="SUBVENTION ACTIVITES NAUTIQUES ECOLE ST JOSEPH"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ADMR"/>
+               <MtSubv V="23000.00"/>
+               <LibPrestaNat V="SUBVENTION ADMR"/>
+               <DenomOuNumSubv V="12"/>
+               <ObjSubv V="SUBVENTION ADMR"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="LES AMIS DE MIADANTSOA"/>
+               <MtSubv V="375.00"/>
+               <LibPrestaNat V="SUBVENTION LES AMIS DE MIADANTSOA"/>
+               <DenomOuNumSubv V="13"/>
+               <ObjSubv V="SUBVENTION LES AMIS DE MIADANTSOA"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="CONFERENCE ST VINCENT DE PAUL"/>
+               <MtSubv V="375.00"/>
+               <LibPrestaNat V="SUBVENTION CONFERENCE ST VINCENT DE PAUL"/>
+               <DenomOuNumSubv V="14"/>
+               <ObjSubv V="SUBVENTION CONFERENCE ST VINCENT DE PAUL"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="AMICALE DONNEURS DE SANG AURAY"/>
+               <MtSubv V="180.00"/>
+               <LibPrestaNat V="SUBVENTION AMICALE DON DU SANG AURAY"/>
+               <DenomOuNumSubv V="15"/>
+               <ObjSubv V="SUBVENTION AMICALE DON DU SANG AURAY"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ASSOCIATION FAIRE FACE ENSEMBLE"/>
+               <MtSubv V="100.00"/>
+               <LibPrestaNat V="SUBVENTION ASSOCIATION FAIRE FACE ENSEMBLE"/>
+               <DenomOuNumSubv V="16"/>
+               <ObjSubv V="SUBVENTION ASSOCIATION FAIRE FACE ENSEMBLE"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="LES RESTOS DU COEUR"/>
+               <MtSubv V="150.00"/>
+               <LibPrestaNat V="SUBVENTION RETOS DU COEUR"/>
+               <DenomOuNumSubv V="17"/>
+               <ObjSubv V="SUBVENTION RETOS DU COEUR"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ADAPEI 56 PAPILLONS BLANCS"/>
+               <MtSubv V="100.00"/>
+               <LibPrestaNat V="SUBVENTION ADAPEI"/>
+               <DenomOuNumSubv V="18"/>
+               <ObjSubv V="SUBVENTION ADAPEI"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="ASSOCIATION KIWANIS"/>
+               <MtSubv V="300.00"/>
+               <LibPrestaNat V="SUBVENTION ASSOCIATION KIWANIS &quot;JOUTES DU LOCH&quot;"/>
+               <DenomOuNumSubv V="19"/>
+               <ObjSubv V="SUBVENTION ASSOCIATION KIWANIS &quot;JOUTES DU LOCH&quot;"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="AFSEP"/>
+               <MtSubv V="100.00"/>
+               <LibPrestaNat V="SUBVENTION AFSEP SCLEROSE EN PLAQUES"/>
+               <DenomOuNumSubv V="20"/>
+               <ObjSubv V="SUBVENTION AFSEP SCLEROSE EN PLAQUES"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="UNC SECTION CRACH"/>
+               <MtSubv V="180.00"/>
+               <LibPrestaNat V="SUBVENTION UNC SECTION CRACH"/>
+               <DenomOuNumSubv V="21"/>
+               <ObjSubv V="SUBVENTION UNC SECTION CRACH"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="UNACITA SECTION CRACH"/>
+               <MtSubv V="180.00"/>
+               <LibPrestaNat V="SUBVENTION UNACITA SECTION CRACH"/>
+               <DenomOuNumSubv V="22"/>
+               <ObjSubv V="SUBVENTION UNACITA SECTION CRACH"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="COMITE DU SOUVENIR FRANCAIS"/>
+               <MtSubv V="80.00"/>
+               <LibPrestaNat V="SUBVENTION COMITE DU SOUVENIR FRANCAIS"/>
+               <DenomOuNumSubv V="23"/>
+               <ObjSubv V="SUBVENTION COMITE DU SOUVENIR FRANCAIS"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="AMICALE PERSONNEL COMMUNAL"/>
+               <MtSubv V="2500.00"/>
+               <LibPrestaNat V="SUBVENTION AMICALE PERSONNEL COMMUNAL"/>
+               <DenomOuNumSubv V="24"/>
+               <ObjSubv V="SUBVENTION AMICALE PERSONNEL COMMUNAL"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="COMICE AGRICOLE CANTON AURAY"/>
+               <MtSubv V="650.00"/>
+               <LibPrestaNat V="SUBVENTION COMICE AGRICOLE CANTON AURAY"/>
+               <DenomOuNumSubv V="25"/>
+               <ObjSubv V="SUBVENTION COMICE AGRICOLE CANTON AURAY"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="PLC AURAY BASKET"/>
+               <MtSubv V="120.00"/>
+               <LibPrestaNat V="SUBVENTION PLC AURAY BASKET"/>
+               <DenomOuNumSubv V="27"/>
+               <ObjSubv V="SUBVENTION PLC AURAY BASKET"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="SAINT PHIL EN ART"/>
+               <MtSubv V="110.00"/>
+               <LibPrestaNat V="SUBVENTION ST PHIL EN ART"/>
+               <DenomOuNumSubv V="28"/>
+               <ObjSubv V="SUBVENTION ST PHIL EN ART"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="SNSM"/>
+               <MtSubv V="500.00"/>
+               <LibPrestaNat V="SUBVENTION SNSM"/>
+               <DenomOuNumSubv V="31"/>
+               <ObjSubv V="SUBVENTION SNSM"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="CIMA PAYS D'AURAY"/>
+               <MtSubv V="110.00"/>
+               <LibPrestaNat V="SUBVENTION CIMA PAYS D'AURAY"/>
+               <DenomOuNumSubv V="35"/>
+               <ObjSubv V="SUBVENTION CIMA PAYS D'AURAY"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="RES'AGRI DE RHUYS A LANVAUX"/>
+               <MtSubv V="85.00"/>
+               <LibPrestaNat V="SUBVENTION AGIR DE RHUYS A LANVAUX"/>
+               <DenomOuNumSubv V="36"/>
+               <ObjSubv V="SUBVENTION AGIR DE RHUYS A LANVAUX"/>
+            </CONCOURS>
+            <CONCOURS>
+               <CodArticle V="6574"/>
+               <CodInvFonc V="F"/>
+               <CodNatJurBenefCA V="P1"/>
+               <LibOrgaBenef V="AR REDADEG A DI DA DI"/>
+               <MtSubv V="350.00"/>
+               <LibPrestaNat V="SUBVENTION REDADEG"/>
+               <DenomOuNumSubv V="37"/>
+               <ObjSubv V="SUBVENTION REDADEG"/>
+            </CONCOURS>
+         </DATA_CONCOURS>
+         <DATA_PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="rédacteur principal de 2ème classe"/>
+               <CodCatAgent V="B"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint administratif territorial principal 1ère classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint administratif territoral principal 2ème classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="3"/>
+               <EffectifPourvu V="3"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint administratif territorial"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="2"/>
+               <EffectifPourvu V="3"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="technicien principal de 2ème classe"/>
+               <CodCatAgent V="B"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="agent de maitrise principal"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="2"/>
+               <EffectifPourvu V="2"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint technique territorial principal 1ère classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="5"/>
+               <EffectifPourvu V="5"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint technique territorial principal 2ème classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="2"/>
+               <EffectifPourvu V="4"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint technique"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="3"/>
+               <EffectifPourvu V="5"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="brigadier chef principal"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="POL"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="agent spécialisé principal de 1ère classe des écoles maternelles"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="MS"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint territorial d'animation principal de 1ère classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ANIM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="Agent de maîtrise"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="Adjoint territorial du patrimoine"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="CULT"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="2"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="technicien"/>
+               <CodCatAgent V="B"/>
+               <TempsComplet V="1"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="0"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint administratif territorial"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="0"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="0"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint technique territorial principal 2ème classe"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="0"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="2"/>
+               <EffectifPourvu V="0"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="adjoint technique"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="0"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="2"/>
+               <EffectifPourvu V="0"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="I"/>
+               <EmploiGradeAgent V="Adjoint territorial du patrimoine"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="0"/>
+               <Permanent V="1"/>
+               <CodSectAgentTitulaire V="CULT"/>
+               <RemunAgent V="0"/>
+               <CodMotifContrAgent V="A"/>
+               <EffectifBud V="1"/>
+               <EffectifPourvu V="0"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="N"/>
+               <EmploiGradeAgent V="Conseillère numérique"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="0"/>
+               <NatureContrat V="CDD"/>
+               <CodSectAgentTitulaire V="ADM"/>
+               <RemunAgent V="22572"/>
+               <CodMotifContrAgent V="A"/>
+               <LibMotifContrAgent V="Projet"/>
+               <EffectifBud V="0"/>
+               <EffectifPourvu V="1"/>
+            </PERSONNEL>
+            <PERSONNEL>
+               <CodTypAgent V="N"/>
+               <EmploiGradeAgent V="Agent de service polyvalent"/>
+               <CodCatAgent V="C"/>
+               <TempsComplet V="1"/>
+               <Permanent V="0"/>
+               <NatureContrat V="CDD"/>
+               <CodSectAgentTitulaire V="TECH"/>
+               <RemunAgent V="6535"/>
+               <CodMotifContrAgent V="A"/>
+               <LibMotifContrAgent V="Accroissement "/>
+               <EffectifBud V="0"/>
+               <EffectifPourvu V="2"/>
+            </PERSONNEL>
+         </DATA_PERSONNEL>
+         <DATA_AMORTISSEMENT_METHODE>
+            <AMORTISSEMENT_METHODE>
+               <LibBienAmort V=""/>
+               <DureeBienAmort V="0"/>
+               <DtDelib V="2000-01-01"/>
+            </AMORTISSEMENT_METHODE>
+         </DATA_AMORTISSEMENT_METHODE>
+         <DATA_SIGNATURE>
+            <SIGNATURE>
+               <NbrMembExer V="22"/>
+               <NbrMembPresent V="15"/>
+               <NbrSuffExprime V="20"/>
+               <NbrVotePour V="20"/>
+               <NbrVoteContre V="0"/>
+               <NbrVoteAbstention V="0"/>
+               <DtConvoc V="2022-03-29"/>
+               <LibPresentPar V="Le "/>
+               <LibPresentLieu V="Crach"/>
+               <DtPresent V="2022-04-04"/>
+               <LibDelibPar V="le Conseil Municipal"/>
+               <LibReuniSession V="Ordinaire"/>
+               <LibDelibLieu V="Crach"/>
+               <DtDelib V="2022-04-04"/>
+               <DtTransmPrefect V="2022-04-06"/>
+               <DtPub V="2022-04-06"/>
+               <LibFin V="Crach"/>
+               <DtfFin V="2022-04-06"/>
+            </SIGNATURE>
+         </DATA_SIGNATURE>
+         <DATA_SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="AUDIC Annie"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE DELEZIR Ronan"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="DANIEL Annick"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="ROULLE Michel"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="CHANTELOT Catherine"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE CHAPELAIN André"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="DERACHE Hubert"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LOIZIC Marie-Pierre"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE MENTEC Michel"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="GASCHIGNARD Augustin"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE BARON Marianne"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE VIGOUROUX Patricia"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="COUGOULIC Caroline"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="GREZEL Yoann"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="DESNOES Simon-Maël"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE BIHAN Sandra"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE GLOAHEC Solenn"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="LE GLOAHEC Christelle"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="HENRIO Anaïs"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="DREANO Jeanne"/>
+            </SIGNATAIRE>
+            <SIGNATAIRE>
+               <Signataire V="MADEC Benoît"/>
+            </SIGNATAIRE>
+         </DATA_SIGNATAIRE>
+         <DATA_ETAB_SERVICE>
+            <ETAB_SERVICE>
+               <CodNatEtab V="03"/>
+               <LibEtab V="COMMERCE"/>
+               <IndicTVAEtab V="true"/>
+            </ETAB_SERVICE>
+            <ETAB_SERVICE>
+               <CodNatEtab V="03"/>
+               <LibEtab V="RUE DE LA FONTAINE"/>
+               <IndicTVAEtab V="true"/>
+            </ETAB_SERVICE>
+         </DATA_ETAB_SERVICE>
+         <DATA_SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="ARS"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="I-A"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="I-B"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="II-A1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="II-A2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="II-A3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="II-B1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="II-B2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="III-A1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="III-A2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="III-B1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="III-B2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="III-B3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.4"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.5"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.6"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A2.7"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A4"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A5"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A6.1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A6.2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A8"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-A9"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.4"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.5"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.6"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B1.7"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B2.1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B2.2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-B3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C3.1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C3.2"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C3.3"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-C3.4"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+            <SOMMAIRE>
+               <CodeAnnexe V="IV-D1"/>
+               <Present V="true"/>
+            </SOMMAIRE>
+         </DATA_SOMMAIRE>
+      </Annexes>
+   </Budget>
+</DocumentBudgetaire>

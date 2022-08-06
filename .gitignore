@@ -1,0 +1,7 @@
+*.egg-info/
+dist/
+
+__pycache__
+
+tests/generate-expected.sh
+tests/generate-dir-structure.sh
