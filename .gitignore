@@ -3,5 +3,6 @@ dist/
 
 __pycache__
 
+build/
 tests/generate-expected.sh
 tests/generate-dir-structure.sh
