@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from io import StringIO, TextIOBase
 import logging
-from tokenize import String
 from typing import Optional
 from xdrlib import ConversionError
 from xml.etree.ElementTree import ElementTree
@@ -18,7 +17,12 @@ BUDGET_XSLT = Path(os.path.dirname(__file__)) / "xsl" / "totem2xmlcsv.xsl"
 @dataclass()
 class Options:
     """Options du processus de conversion"""
-    inclure_header_csv: bool = False # Inclure le nom des colonnes dans le CSV generé.
+
+    inclure_header_csv: bool = True  # Inclure le nom des colonnes dans le CSV generé.
+    xml_intermediaire_path: Optional[
+        str
+    ] = None  # Chemin du fichier pour écrire le XML intermédiaire
+
 
 def totem_budget_vers_scdl(
     totem_fpath: Path,
@@ -33,7 +37,9 @@ def totem_budget_vers_scdl(
         pdc_path = _extraire_plan_de_compte(
             totem_tree=totem_tree, pdcs_dpath=pdcs_dpath
         )
-        transformed_tree = _transform(totem_tree=totem_tree, pdc_fpath=pdc_path)
+        transformed_tree = _transform(
+            totem_tree=totem_tree, pdc_fpath=pdc_path, options=options
+        )
         _xml_to_csv(transformed_tree, output, options)
     except OSError as err:
         raise ConversionErreur from err
@@ -65,7 +71,9 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
     return pdc_path
 
 
-def _transform(totem_tree: ElementTree, pdc_fpath: Path) -> ElementTree:
+def _transform(
+    totem_tree: ElementTree, pdc_fpath: Path, options: Options
+) -> ElementTree:
     # xmlstarlet tr xsl -s plandecompte=pdc totem | xmlstarlet fo - > temp
 
     logging.debug(
@@ -77,7 +85,11 @@ def _transform(totem_tree: ElementTree, pdc_fpath: Path) -> ElementTree:
     pdc_param = _as_xpath_str(str(pdc_fpath.resolve()))
 
     transformed_tree = transform(totem_tree, plandecompte=pdc_param)
-    _write_in_tmp(transformed_tree)
+
+    intermediaire_fpath = options.xml_intermediaire_path
+    if intermediaire_fpath is not None:
+        _write_in_tmp(transformed_tree, intermediaire_fpath)
+
     return transformed_tree
 
 
@@ -103,13 +115,12 @@ def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
         text_io.write(",".join(row_data))
 
 
-def _write_in_tmp(tree: ElementTree):
-    tmp = Path("/tmp/debug.tree")
+def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
+    tmp = Path(intermediaire_fpath)
     tree.write(tmp, pretty_print=True)
-    logging.debug(f"Totem transformé dans {tmp}")
+    logging.debug(f"Ecriture du totem transformé dans {tmp}")
 
 
-# TODO remove
 if __name__ == "__main__":
     import os
     import logging
@@ -123,6 +134,9 @@ if __name__ == "__main__":
 
     with StringIO() as output:
         scdl = totem_budget_vers_scdl(
-            totem_fpath=totemf, pdcs_dpath=pdcsp, output=output
+            totem_fpath=totemf,
+            pdcs_dpath=pdcsp,
+            output=output,
+            options=Options(xml_intermediaire_path="/tmp/temp_totem.xml"),
         )
         print(output.getvalue())

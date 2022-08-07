@@ -1,11 +1,12 @@
 import hashlib
-from io import StringIO
-from tokenize import String
-import pytest
 import os
-from os import listdir, scandir
+import tempfile
+from os import listdir
 from os.path import isdir, join
 from pathlib import Path
+
+import pytest
+from yatotem2scdl.convert import Options
 from yatotem2scdl.convert import totem_budget_vers_scdl as convert
 
 _EXEMPLES_PATH = Path(os.path.dirname(__file__)) / "exemples"
@@ -21,11 +22,12 @@ _PLANS_DE_COMPTE_PATH = Path(os.path.dirname(__file__)) / "plans_de_comptes"
 )
 def test_generation(totem: Path, expected: Path):
 
-    with StringIO() as output:
+    _, temp_file_str = tempfile.mkstemp(".csv")
+    with open(temp_file_str, 'r+') as output:
         convert(totem_fpath=totem, pdcs_dpath=_PLANS_DE_COMPTE_PATH, output=output)
 
-        scdl_str = output.getvalue()
         expected_hash = hashlib.md5(expected.read_bytes()).hexdigest()
-        candidate_hash = hashlib.md5(scdl_str.encode()).hexdigest()
+        candidate_hash = hashlib.md5(Path(temp_file_str).read_bytes()).hexdigest()
 
         assert expected_hash == candidate_hash, f"Le contenu de la genration de scdl doit correspondre à {expected}"
+
