@@ -35,3 +35,10 @@ python -m build
 pytest
 ```
 
+### CLI
+
+Après installation du package, la commande `yatotem2scdl` devient disponible:
+
+```bash
+$ yatotem2scdl --help
+```
