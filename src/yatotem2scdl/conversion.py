@@ -32,8 +32,19 @@ def totem_budget_vers_scdl(
     output: TextIOBase,
     options: Options = Options(),
 ):
+    """Convertit un fichier totem vers un SCDL budget
 
-    logging.debug(f"Convertion du fichier totem {totem_fpath}")
+    Args:
+        totem_fpath (Path): Chemin vers le fichier totem.
+        pdcs_dpath (Path): Chemin contenant les plans de comptes.
+        output (TextIOBase): TextIO vers lequel le CSV est écrit.
+        options (Options, optional): Diverses options. Defaults to Options().
+
+    Raises:
+        ConversionErreur: ou une classe fille suivant la nature de l'erreur.
+    """
+
+    logging.info(f"Conversion du fichier budget totem: {totem_fpath}")
     try:
         totem_tree: ElementTree = etree.parse(totem_fpath)
         pdc_path = _extraire_plan_de_compte(
@@ -43,15 +54,16 @@ def totem_budget_vers_scdl(
             totem_tree=totem_tree, pdc_fpath=pdc_path, options=options
         )
         _xml_to_csv(transformed_tree, output, options)
-    except OSError as err:
-        raise ConversionErreur from err
+        logging.info("OK")
+    except ConversionErreur as err:
+        raise err
+    except Exception as err:
+        raise ConversionErreur() from err
 
 
 def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
 
-    namespaces = {
-        "db": "http://www.minefi.gouv.fr/cp/demat/docbudgetaire"
-    }  # add more as needed
+    namespaces = {"db": "http://www.minefi.gouv.fr/cp/demat/docbudgetaire"}
 
     nomenclature: Optional[str] = totem_tree.findall(
         "/db:Budget/db:EnTeteBudget/db:Nomenclature", namespaces
@@ -62,7 +74,7 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
 
     if nomenclature is None or year is None:
         raise ConversionError(
-            f"On s'attend à ce que le fichier totem contienne la nomenclature et l'année"
+            "On s'attend à ce que le fichier totem contienne la nomenclature et l'année"
         )
 
     logging.info(f"Version de plan de compte trouvée: ({year}, {nomenclature})")
@@ -76,7 +88,6 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
 def _transform(
     totem_tree: ElementTree, pdc_fpath: Path, options: Options
 ) -> ElementTree:
-    # xmlstarlet tr xsl -s plandecompte=pdc totem | xmlstarlet fo - > temp
 
     logging.debug(
         (f"\nTransformation du fichier totem" f"\n\tFichier XSL: {BUDGET_XSLT}")
@@ -106,6 +117,9 @@ def _as_xpath_str(s: str):
 
 
 def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
+
+    if not text_io.writable():
+        raise ConversionErreur(f"{str(text_io)} est en lecture seule.")
 
     writer = csv.writer(text_io)
 

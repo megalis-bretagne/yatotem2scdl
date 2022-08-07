@@ -1,7 +1,13 @@
 
+from typing import Optional
+
+
 class ConversionErreur(Exception):
     """Exception de base levée lors de la conversion en SCDL"""
-    pass
+
+    def __init__(self, message: Optional[str] = None) -> None:
+        self.message = message
+        super().__init__(self.message)
 
 class CaractereAppostropheErreur(ConversionErreur):
     """Levée lorsqu'un caractère apostrophe interdit a été fourni par l'utilisateur"""
@@ -13,4 +19,3 @@ class CaractereAppostropheErreur(ConversionErreur):
             f"\n\t{self.chaine}"
         )
         super().__init__(message)
-    pass

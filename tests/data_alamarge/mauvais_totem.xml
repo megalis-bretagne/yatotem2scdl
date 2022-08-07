@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DocumentBudgetaire xmlns="http://www.minefi.gouv.fr/cp/demat/docbudgetaire">
+   <VersionSchema V="100"/>
+   <BlocEditeur xmlns:bl="http://www.berger-levrault.fr/demat/outils">
+      <CodeEditeur V="Berger-Levrault"/>
+      <bl:ProduitGF V="e.gf �volution - 16.51.00.03"/>
+      <bl:EchangeXML V="2022.04"/>
+   </BlocEditeur>
+   <VersionOutil outil="DSC_COMMON" version="30"/>
+   <VersionOutil outil="REMAT" version="2"/>
+   <Scellement md5="C2AD100CFDB19AE28D5BF4454461F5E7" sha1="D3076262EBE7EE60086DB285A1D5D02910ECDB15" date="2022-04-07T10:16:21.216+02:00"/>
+   <EnTeteDocBudgetaire>
+      <DteStr V="2022-04-07"/>
+      <LibellePoste V="TRESORERIE AURAY"/>
+      <IdPost V="056025"/>
+      <LibelleColl V="CRACH"/>
+      <IdColl V="21560046100085"/>
+      <NatCEPL V="Commune"/>
+      <Departement V="56"/>
+   </EnTeteDocBudgetaire>
+</DocumentBudgetaire>
