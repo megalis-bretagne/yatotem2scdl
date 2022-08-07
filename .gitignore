@@ -5,3 +5,5 @@ __pycache__
 
 tests/generate-expected.sh
 tests/generate-dir-structure.sh
+
+xsl/

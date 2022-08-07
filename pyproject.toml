@@ -14,12 +14,18 @@ dependencies = [
     "lxml"
 ]
 
+
+
 [project.optional-dependencies]
 dev = [
     "black",
     "mypy",
     "pytest", "pytest-watch"
 ]
+
+[tool.setuptools]
+include-package-data = true
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
