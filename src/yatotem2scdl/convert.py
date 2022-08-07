@@ -4,8 +4,10 @@ import logging
 from typing import Optional
 from xdrlib import ConversionError
 from xml.etree.ElementTree import ElementTree
-import os
 from pathlib import Path
+
+import os
+import csv
 
 from yatotem2scdl.exceptions import ConversionErreur, CaractereAppostropheErreur
 
@@ -105,14 +107,15 @@ def _as_xpath_str(s: str):
 
 def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
 
+    writer = csv.writer(text_io)
+
     if options.inclure_header_csv:
         header_names = [elt.attrib["name"] for elt in tree.iterfind("/header/column")]
-        text_io.write(",".join(header_names))
+        writer.writerow(header_names)
 
     for row_tag in tree.iterfind("/data/row"):
         row_data = [cell.attrib["value"] for cell in row_tag.iter("cell")]
-        text_io.write("\n")
-        text_io.write(",".join(row_data))
+        writer.writerow(row_data)
 
 
 def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):

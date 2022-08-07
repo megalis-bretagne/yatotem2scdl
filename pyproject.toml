@@ -20,7 +20,8 @@ dependencies = [
 dev = [
     "black",
     "mypy",
-    "pytest", "pytest-watch"
+    "pytest", "pytest-watch",
+    "csv-diff"
 ]
 
 [tool.setuptools]
