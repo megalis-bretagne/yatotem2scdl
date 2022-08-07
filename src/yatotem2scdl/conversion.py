@@ -134,7 +134,7 @@ def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
 
 def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
     tmp = Path(intermediaire_fpath)
-    tree.write(tmp, pretty_print=True)
+    tree.write(tmp, pretty_print=True)  # type: ignore[call-arg]
     logging.debug(f"Ecriture du totem transformé dans {tmp}")
 
 
