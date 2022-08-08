@@ -52,3 +52,12 @@ Après installation du package, la commande `yatotem2scdl` devient disponible:
 ```bash
 $ yatotem2scdl --help
 ```
+
+### Upload
+
+Pour upload sur un repository PyPI:
+
+```bash
+python -m build
+twine upload --repository-url https://<REPO_URL>/repository/pypi-hosted/ dist/*
+```
