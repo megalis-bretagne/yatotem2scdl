@@ -61,6 +61,17 @@ def totem_budget_vers_scdl(
         raise ConversionErreur() from err
 
 
+def budget_scdl_entetes() -> str:
+    """Récupère la ligne d'entete du SCDL correspondant aux budgets"""
+
+    xslt_tree: ElementTree = etree.parse(BUDGET_XSLT)
+    entetes = xslt_tree.xpath(
+        "/xsl:stylesheet/xsl:template/csv/header/column/@name",
+        namespaces={"xsl": "http://www.w3.org/1999/XSL/Transform"},
+    )
+    return ",".join(entetes)
+
+
 def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
 
     namespaces = {"db": "http://www.minefi.gouv.fr/cp/demat/docbudgetaire"}

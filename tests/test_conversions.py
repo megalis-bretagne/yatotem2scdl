@@ -5,7 +5,7 @@ from pathlib import Path
 from csv_diff import load_csv, compare
 
 import pytest
-from yatotem2scdl.conversion import totem_budget_vers_scdl
+from yatotem2scdl.conversion import totem_budget_vers_scdl, budget_scdl_entetes
 
 from data import PLANS_DE_COMPTE_PATH
 from data import test_case_dirs
@@ -39,3 +39,8 @@ def test_generation(totem_path: Path, expected_path: Path):
     assert (
         expected_hash == candidate_hash
     ), f"Le contenu de la genration de scdl doit correspondre à {expected_path}\n Liste des differences: \n{diff}"
+
+
+def test_scdl_entetes():
+    entetes = budget_scdl_entetes()
+    assert "BGT_NOM" in entetes
