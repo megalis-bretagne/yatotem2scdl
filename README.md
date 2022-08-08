@@ -35,6 +35,16 @@ python -m build
 pytest
 ```
 
+#### Ajouter des tests boite noire
+
+Le fichier [test_conversions.py](./tests/test_conversions.py) contient des tests boite noire, les jeux de données étant quant à eux situés dans [exemples](./tests/exemples/).
+Il est possible d'ajouter des cas de test via la variable d'environnement `YATOTEM2SCDL_EXEMPLES_ADDITIONNELS`, qui pointe vers un dossier suivant la même nomenclature que [exemples](./tests/exemples/).
+
+```fish
+set -lx YATOTEM2SCDL_EXEMPLES_ADDITIONNELS <DOSSIER_AVEC_JEUX_DE_TESTS_ADDITIONNELS>
+pytest
+```
+
 ### CLI
 
 Après installation du package, la commande `yatotem2scdl` devient disponible:
