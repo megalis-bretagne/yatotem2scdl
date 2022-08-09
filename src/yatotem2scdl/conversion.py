@@ -159,24 +159,3 @@ def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
     tmp = Path(intermediaire_fpath)
     tree.write(tmp, pretty_print=True)  # type: ignore[call-arg]
     logging.debug(f"Ecriture du totem transformé dans {tmp}")
-
-
-if __name__ == "__main__":
-    import os
-    import logging
-
-    logging.basicConfig(level=logging.DEBUG)
-
-    testp = Path(os.path.dirname(__file__)) / "../.." / "tests"
-    totemf = testp / "exemples" / "budget-crach-001" / "totem.xml"
-    pdcsp = testp / "plans_de_comptes"
-    # pdcsp = testp / "autres'pdcs"
-
-    with StringIO() as output:
-        scdl = totem_budget_vers_scdl(
-            totem_fpath=totemf,
-            pdcs_dpath=pdcsp,
-            output=output,
-            options=Options(xml_intermediaire_path="/tmp/temp_totem.xml"),
-        )
-        print(output.getvalue())
