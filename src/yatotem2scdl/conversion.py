@@ -14,6 +14,7 @@ from yatotem2scdl.exceptions import ConversionErreur, CaractereAppostropheErreur
 from lxml import etree
 
 BUDGET_XSLT = Path(os.path.dirname(__file__)) / "xsl" / "totem2xmlcsv.xsl"
+PDC_VIDE = Path(os.path.dirname(__file__)) / "planDeCompte-vide.xml"
 
 
 @dataclass()
@@ -106,7 +107,18 @@ def _transform(
 
     xslt_tree = etree.parse(BUDGET_XSLT.resolve())
     transform = etree.XSLT(xslt_input=xslt_tree)
-    pdc_param = _as_xpath_str(str(pdc_fpath.resolve()))
+
+    pdc_exists = os.path.exists(pdc_fpath)
+
+    pdc_param = _as_xpath_str(
+        str(pdc_fpath.resolve()) if pdc_exists else str(PDC_VIDE.resolve())
+    )
+
+    if not pdc_exists:
+        logging.warning(
+            f"Impossible de trouver un plan de compte pour le fichier totem."
+            f" Le SCDL sera probablement incomplet"
+        )
 
     transformed_tree = transform(totem_tree, plandecompte=pdc_param)
 
