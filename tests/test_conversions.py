@@ -1,4 +1,5 @@
 import hashlib
+from sys import stderr
 import tempfile
 from os.path import isdir
 from pathlib import Path
@@ -31,7 +32,11 @@ def test_generation(totem_path: Path, expected_path: Path):
 
     candidate_csv = load_csv(open(candidate_filepath))
     expected_csv = load_csv(open(expected_path))
-    diff = compare(candidate_csv, expected_csv)
+    diff = ["Ne peut pas calculer la différence"]
+    try:
+        diff = compare(candidate_csv, expected_csv)
+    except Exception:
+        stderr.write("Erreur lors de la comparaisons des csv\n")
 
     expected_hash = hashlib.md5(expected_path.read_bytes()).hexdigest()
     candidate_hash = hashlib.md5(candidate_filepath.read_bytes()).hexdigest()
