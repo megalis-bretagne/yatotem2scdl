@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from io import StringIO, TextIOBase
+from io import TextIOBase
 import logging
 from typing import Optional
 from xdrlib import ConversionError
@@ -21,10 +21,12 @@ PDC_VIDE = Path(os.path.dirname(__file__)) / "planDeCompte-vide.xml"
 class Options:
     """Options du processus de conversion"""
 
+    lineterminator: Optional[str] = None
     inclure_header_csv: bool = True  # Inclure le nom des colonnes dans le CSV generé.
     xml_intermediaire_path: Optional[
         str
     ] = None  # Chemin du fichier pour écrire le XML intermédiaire
+
 
 
 def totem_budget_vers_scdl(
@@ -144,7 +146,7 @@ def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
     if not text_io.writable():
         raise ConversionErreur(f"{str(text_io)} est en lecture seule.")
 
-    writer = csv.writer(text_io)
+    writer = _make_writer(text_io, options)
 
     if options.inclure_header_csv:
         header_names = [elt.attrib["name"] for elt in tree.iterfind("/header/column")]
@@ -154,6 +156,11 @@ def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
         row_data = [cell.attrib["value"] for cell in row_tag.iter("cell")]
         writer.writerow(row_data)
 
+def _make_writer(text_io, options: Options):
+    if options.lineterminator is None:
+        return csv.writer(text_io)
+    else:
+        return csv.writer(text_io, lineterminator=options.lineterminator)
 
 def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
     tmp = Path(intermediaire_fpath)
