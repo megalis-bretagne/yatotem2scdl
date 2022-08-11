@@ -14,7 +14,7 @@ yatotem2scdl = "yatotem2scdl.main:main"
 
 
 [project.optional-dependencies]
-dev = ["build", "black", "mypy", "pytest", "pytest-watch", "csv-diff"]
+dev = ["build", "black", "mypy", "pytest", "pytest-watch", "csv-diff", "twine"]
 
 [tool.setuptools]
 include-package-data = true
