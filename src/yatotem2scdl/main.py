@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import sys
 
-from yatotem2scdl.conversion import totem_budget_vers_scdl
+from yatotem2scdl.conversion import ConvertisseurTotemBudget
 
 
 def process(args):
@@ -11,7 +11,8 @@ def process(args):
     totem_filep = Path(args.totem_file)
     pdcs_dpath = Path(args.plans_de_comptes)
 
-    totem_budget_vers_scdl(
+    convertisseur = ConvertisseurTotemBudget()
+    convertisseur.totem_budget_vers_scdl(
         totem_fpath=totem_filep, pdcs_dpath=pdcs_dpath, output=sys.stdout
     )
 
