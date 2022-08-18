@@ -1,4 +1,5 @@
 import hashlib
+import json
 from sys import stderr
 import tempfile
 from os.path import isdir
@@ -6,7 +7,7 @@ from pathlib import Path
 from csv_diff import load_csv, compare
 
 import pytest
-from yatotem2scdl.conversion import totem_budget_vers_scdl, budget_scdl_entetes
+from yatotem2scdl.conversion import ConvertisseurTotemBudget, Options
 
 from data import PLANS_DE_COMPTE_PATH
 from data import test_case_dirs
@@ -21,9 +22,28 @@ def test_generation(totem_path: Path, expected_path: Path):
     _, candidate_file_str = tempfile.mkstemp(".csv")
     candidate_filepath = Path(candidate_file_str)
 
+    xslt_custom = totem_path.parent / "totem2xmlcsv-custom.xsl"
+    convert_options_conf = totem_path.parent / "convert-options.json"
+
+    if xslt_custom.exists():
+        print(f"On utilise un totem2xmlcsv custom")
+        convertisseur = ConvertisseurTotemBudget(xslt_budget=xslt_custom)
+    else:
+        convertisseur = ConvertisseurTotemBudget()
+
+    options = Options()
+    if convert_options_conf.exists():
+        with convert_options_conf.open("r") as f:
+            json_opts = json.load(f)
+            print(f"On utilise les options de conversion suivantes: {json_opts}")
+            options.__dict__.update(json_opts)
+
     with open(candidate_filepath, "wt", encoding="UTF-8") as output:
-        totem_budget_vers_scdl(
-            totem_fpath=totem_path, pdcs_dpath=PLANS_DE_COMPTE_PATH, output=output
+        convertisseur.totem_budget_vers_scdl(
+            totem_fpath=totem_path,
+            pdcs_dpath=PLANS_DE_COMPTE_PATH,
+            output=output,
+            options=options,
         )
 
     # tmp_dir = tempfile.mkdtemp("-test-generation")
@@ -47,5 +67,6 @@ def test_generation(totem_path: Path, expected_path: Path):
 
 
 def test_scdl_entetes():
-    entetes = budget_scdl_entetes()
+    convertisseur = ConvertisseurTotemBudget()
+    entetes = convertisseur.budget_scdl_entetes()
     assert "BGT_NOM" in entetes
