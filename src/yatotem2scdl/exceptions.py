@@ -60,3 +60,9 @@ class AnneeExerciceInvalideErreur(TotemInvalideErreur):
     def __init__(self, annee: Optional[str]) -> None:
         message = f"L'année {annee} est invalie"
         super().__init__(message)
+
+class EtapeBudgetaireInconnueErreur(TotemInvalideErreur):
+    """Levée lorsque l'étape budgetaire d'un fichier totem est invalide"""
+    def __init__(self, annee: Optional[str]) -> None:
+        message = f"L'année {annee} est invalie"
+        super().__init__(message)

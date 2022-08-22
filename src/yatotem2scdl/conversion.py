@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from enum import Enum
 from io import TextIOBase
 import logging
 from typing import Optional
@@ -12,6 +13,7 @@ from yatotem2scdl.exceptions import (
     AnneeExerciceInvalideErreur,
     ConversionErreur,
     CaractereAppostropheErreur,
+    EtapeBudgetaireInconnueErreur,
     ExtractionMetadataErreur,
     NomenclatureInvalideErreur,
     SiretInvalideErreur,
@@ -24,11 +26,74 @@ _BUDGET_XSLT = Path(os.path.dirname(__file__)) / "xsl" / "totem2xmlcsv.xsl"
 _PDC_VIDE = Path(os.path.dirname(__file__)) / "planDeCompte-vide.xml"
 
 
+class EtapeBudgetaire(Enum):
+    # Alias des différentes étapes budgetaires
+    # Le premier alias corresponse à la valeur au sein de la norme scdl
+    # https://schema.data.gouv.fr/scdl/budget/0.8.1/documentation.html#etape-budgetaire-propriete-bgt-natdec
+    __primitif_aliases__ = ["budget primitif", "Budget primitif"]
+    __supplementaire_aliases__ = [
+        "budget supplémentaire",
+        "Budget supplémentaire",
+        "supplémentaire",
+    ]
+    __modificative_aliases__ = [
+        "décision modificative",
+        "Décision modificative",
+        "modificative",
+        "modificatif",
+    ]
+    __ca_aliases__ = [
+        "compte administratif",
+        "compte administratif",
+        "ca",
+        "administratif",
+    ]
+
+    # Les valeurs de l'enum correspondent au code NatDec des fichiers totem
+    PRIMITIF = 1
+    DECISION_MODIF = 2
+    BUDGET_SUPP = 3
+    COMPTE_ADMIN = 9
+
+    @staticmethod
+    def from_str(chaine: str):
+        if chaine in EtapeBudgetaire.__primitif_aliases__:
+            return EtapeBudgetaire.PRIMITIF
+        elif chaine in EtapeBudgetaire.__supplementaire_aliases__:
+            return EtapeBudgetaire.BUDGET_SUPP
+        elif chaine in EtapeBudgetaire.__modificative_aliases__:
+            return EtapeBudgetaire.DECISION_MODIF
+        elif chaine in EtapeBudgetaire.__ca_aliases__:
+            return EtapeBudgetaire.COMPTE_ADMIN
+        else:
+            raise EtapeBudgetaireInconnueErreur(chaine)
+
+    def to_scdl_compatible_str(self):
+        if self is EtapeBudgetaire.PRIMITIF:
+            return EtapeBudgetaire.__primitif_aliases__[0]
+        elif self is EtapeBudgetaire.DECISION_MODIF:
+            return EtapeBudgetaire.__modificative_aliases__[0]
+        elif self is EtapeBudgetaire.BUDGET_SUPP:
+            return EtapeBudgetaire.__supplementaire_aliases__[0]
+        elif self is EtapeBudgetaire.COMPTE_ADMIN:
+            return EtapeBudgetaire.__ca_aliases__[0]
+        else:
+            assert (
+                False
+            ), "Erreur de programmation, merci de bien utiliser l'enum EtapeBudgetaire"
+
+    def __str__(self) -> str:
+        return self.to_scdl_compatible_str()
+
+
 @dataclass()
 class TotemBudgetMetadata:
     annee_exercice: int  # Année d'exercice
     id_etablissement: int  # ID de l'établissement, son SIRET
-    plan_de_compte: Optional[Path]  # Chemin vers le plan de compte concernant ce fichier totem. Peut être None.
+    etape_budgetaire: EtapeBudgetaire  # Etape budgetaire concernée par le document
+    plan_de_compte: Optional[
+        Path
+    ]  # Chemin vers le plan de compte concernant ce fichier totem. Peut être None.
 
 
 @dataclass()
@@ -107,7 +172,7 @@ class ConvertisseurTotemBudget:
         totem_fpath: Path,
         pdcs_dpath: Path,
     ) -> TotemBudgetMetadata:
-        def _extraire_pdc_for_metadta(tree, pdcs_dpath):
+        def _extraire_pdc_for_metadata(tree, pdcs_dpath):
             try:
                 pdc_path = _extraire_plan_de_compte(tree, pdcs_dpath)
                 return pdc_path
@@ -117,15 +182,18 @@ class ConvertisseurTotemBudget:
 
         try:
             totem_tree: ElementTree = etree.parse(totem_fpath)
-            pdc_path = _extraire_pdc_for_metadta(totem_tree, pdcs_dpath)
+            pdc_path = _extraire_pdc_for_metadata(totem_tree, pdcs_dpath)
+            code_etape = _xpath_totem_budget_etape(totem_tree)
             id_etab = _xpath_totem_budget_id_etab(totem_tree)
             annee = _xpath_totem_budget_annee_exercice(totem_tree)
 
+            etape = _parse_code_etape(code_etape)
             annee_i = _parse_annee_exercice(annee)
             id_etab_siret = _parse_siret(id_etab)
 
             return TotemBudgetMetadata(
                 annee_exercice=annee_i,
+                etape_budgetaire=etape,
                 id_etablissement=id_etab_siret,
                 plan_de_compte=pdc_path,
             )
@@ -157,7 +225,11 @@ class ConvertisseurTotemBudget:
         xslt_tree = etree.parse(self.__xslt_budget.resolve())
         transform = etree.XSLT(xslt_input=xslt_tree)
 
-        pdc_fpath_str = str(pdc_fpath.resolve()) if pdc_fpath is not None else str(_PDC_VIDE.resolve())
+        pdc_fpath_str = (
+            str(pdc_fpath.resolve())
+            if pdc_fpath is not None
+            else str(_PDC_VIDE.resolve())
+        )
         pdc_param = _as_xpath_str(pdc_fpath_str)
 
         transformed_tree = transform(totem_tree, plandecompte=pdc_param)
@@ -214,20 +286,35 @@ def _xpath_totem_budget_annee_exercice(totem_tree: ElementTree) -> Optional[str]
 
     namespaces = _namespaces()
 
-    year: Optional[str] = totem_tree.findall(
-        "/db:Budget/db:BlocBudget/db:Exer", namespaces
-    )[0].attrib.get("V")
+    year_elmt = totem_tree.find("/db:Budget/db:BlocBudget/db:Exer", namespaces)
+    if year_elmt is None:
+        return None
+    year: Optional[str] = year_elmt.attrib.get("V")
     return year
 
 
 def _xpath_totem_budget_id_etab(totem_tree: ElementTree) -> Optional[str]:
 
     namespaces = _namespaces()
+    id_etab_elmt = totem_tree.find("/db:Budget/db:EnTeteBudget/db:IdEtab", namespaces)
+    if id_etab_elmt is None:
+        return None
+    id_etab: Optional[str] = id_etab_elmt.attrib.get("V")
+    return id_etab
 
-    year: Optional[str] = totem_tree.findall(
-        "/db:Budget/db:EnTeteBudget/db:IdEtab", namespaces
-    )[0].attrib.get("V")
-    return year
+
+def _xpath_totem_budget_etape(totem_tree: ElementTree) -> Optional[str]:
+    namespaces = _namespaces()
+
+    nat_dec_elmt = totem_tree.find("//db:Budget/db:BlocBudget/db:NatDec", namespaces)
+    if nat_dec_elmt is None:
+        return None
+
+    code_etape = nat_dec_elmt.attrib.get("V")
+    if code_etape is None:
+        return None
+
+    return code_etape
 
 
 def _namespaces() -> dict[str, str]:
@@ -273,19 +360,9 @@ def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
     tree.write(tmp, pretty_print=True)  # type: ignore[call-arg]
     logging.debug(f"Ecriture du totem transformé dans {tmp}")
 
+
 def _parse_annee_exercice(annee: Optional[str]) -> int:
-    """Parse la chaine de caractere comme l'annee d'exercice
 
-    Args:
-        annee (str): annee
-
-    Raises:
-        AnneeExerciceInvalideErreur: Si l'annee d'exercice est invalide
-
-    Returns:
-        int: l'annee sous forme d'integer
-    """
-    
     try:
         if annee is None:
             raise Exception("L'annee ne peut pas etre None")
@@ -295,18 +372,9 @@ def _parse_annee_exercice(annee: Optional[str]) -> int:
     except Exception as err:
         raise AnneeExerciceInvalideErreur(annee) from err
 
+
 def _parse_siret(siret: Optional[str]) -> int:
-    """Parse un chaine comme un siret
 
-    Args:
-        siret (str): Siret
-
-    Raises:
-        SiretInvalideErreur: Si la chaine est un siret invalide
-
-    Returns:
-        int: siret sous forme d'integer
-    """
     try:
         if siret is None:
             raise Exception("le siret ne peut pas etre None")
@@ -319,3 +387,16 @@ def _parse_siret(siret: Optional[str]) -> int:
         return siret_int
     except Exception as err:
         raise SiretInvalideErreur(siret) from err
+
+
+def _parse_code_etape(code_etape: Optional[str]) -> EtapeBudgetaire:
+
+    try:
+        if code_etape is None:
+            raise Exception("le siret ne peut pas etre None")
+
+        code_etape_i = int(code_etape)
+
+        return EtapeBudgetaire(code_etape_i)
+    except Exception as err:
+        raise EtapeBudgetaireInconnueErreur(code_etape) from err
