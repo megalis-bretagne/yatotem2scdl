@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 from typing import Optional
 
+EXTRACT_METADATA_PATH = Path(os.path.dirname(__file__)) / "data_extract_metadata"
 A_LA_MARGE_PATH = Path(os.path.dirname(__file__)) / "data_alamarge"
 PLANS_DE_COMPTE_PATH = Path(os.path.dirname(__file__)) / "plans_de_comptes"
 
