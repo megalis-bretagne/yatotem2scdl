@@ -30,11 +30,12 @@ class EtapeBudgetaire(Enum):
     # Alias des différentes étapes budgetaires
     # Le premier alias corresponse à la valeur au sein de la norme scdl
     # https://schema.data.gouv.fr/scdl/budget/0.8.1/documentation.html#etape-budgetaire-propriete-bgt-natdec
-    __primitif_aliases__ = ["budget primitif", "Budget primitif"]
+    __primitif_aliases__ = ["budget primitif", "Budget primitif", "primitif"]
     __supplementaire_aliases__ = [
         "budget supplémentaire",
         "Budget supplémentaire",
         "supplémentaire",
+        "supplementaire",
     ]
     __modificative_aliases__ = [
         "décision modificative",
@@ -57,6 +58,10 @@ class EtapeBudgetaire(Enum):
 
     @staticmethod
     def from_str(chaine: str):
+        """
+        Raises:
+            EtapeBudgetaireInconnueErreur: en cas de chaine invalide
+        """
         if chaine in EtapeBudgetaire.__primitif_aliases__:
             return EtapeBudgetaire.PRIMITIF
         elif chaine in EtapeBudgetaire.__supplementaire_aliases__:
