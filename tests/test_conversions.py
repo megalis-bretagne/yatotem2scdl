@@ -7,7 +7,8 @@ from pathlib import Path
 from csv_diff import load_csv, compare
 
 import pytest
-from yatotem2scdl.conversion import ConvertisseurTotemBudget, Options
+
+from yatotem2scdl import ConvertisseurTotemBudget, Options
 
 from data import PLANS_DE_COMPTE_PATH
 from data import test_case_dirs

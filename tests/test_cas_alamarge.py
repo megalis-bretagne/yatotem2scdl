@@ -1,14 +1,19 @@
 import tempfile
-from yatotem2scdl.conversion import ConvertisseurTotemBudget
-from yatotem2scdl.exceptions import ConversionErreur, CaractereAppostropheErreur
+from yatotem2scdl import (
+    ConvertisseurTotemBudget,
+    ConversionErreur,
+    CaractereAppostropheErreur,
+)
 
 import pytest
 
 from data import A_LA_MARGE_PATH, PLANS_DE_COMPTE_PATH
 
+
 @pytest.fixture()
 def _convertisseur():
     return ConvertisseurTotemBudget()
+
 
 def test_io_lecture_seule(_convertisseur):
 
