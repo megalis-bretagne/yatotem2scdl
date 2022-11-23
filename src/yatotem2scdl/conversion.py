@@ -1,8 +1,9 @@
 from io import TextIOBase
-import logging
 from typing import Optional
 from xml.etree.ElementTree import ElementTree
 from pathlib import Path
+
+from yatotem2scdl import logger
 
 import os
 import csv
@@ -62,7 +63,7 @@ class ConvertisseurTotemBudget:
                 pdc_path = _extraire_plan_de_compte(tree, pdcs_dpath)
                 return pdc_path
             except TotemInvalideErreur:
-                logging.warning(
+                logger.warning(
                     f"Impossible de trouver un plan de compte pour le fichier totem."
                     f" Le SCDL sera probablement incomplet"
                 )
@@ -71,7 +72,7 @@ class ConvertisseurTotemBudget:
         if options is None:
             options = Options()
 
-        logging.info(f"Conversion du fichier budget totem: {totem_fpath}")
+        logger.info(f"Conversion du fichier budget totem: {totem_fpath}")
         try:
             totem_tree: ElementTree = etree.parse(totem_fpath)
             pdc_path = _extraire_pdc_for_conversion(totem_tree, pdcs_dpath)
@@ -79,7 +80,6 @@ class ConvertisseurTotemBudget:
                 totem_tree=totem_tree, pdc_fpath=pdc_path, options=options
             )
             _xml_to_csv(transformed_tree, output, options)
-            logging.info("OK")
 
         except ConversionErreur as err:
             raise err
@@ -96,7 +96,7 @@ class ConvertisseurTotemBudget:
                 pdc_path = _extraire_plan_de_compte(tree, pdcs_dpath)
                 return pdc_path
             except TotemInvalideErreur as err:
-                logging.warning(str(err))
+                logger.warning(str(err))
                 return None
 
         try:
@@ -134,7 +134,7 @@ class ConvertisseurTotemBudget:
         self, totem_tree: ElementTree, pdc_fpath: Optional[Path], options: Options
     ) -> ElementTree:
 
-        logging.debug(
+        logger.debug(
             (
                 f"\nTransformation du fichier totem"
                 f"\n\tFichier XSL: {self.__xslt_budget}"
@@ -187,7 +187,7 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
     if year is None:
         raise AnneeExerciceInvalideErreur(year)
 
-    logging.info(f"Version de plan de compte trouvée: ({year}, {nomenclature})")
+    logger.debug(f"Version de plan de compte trouvée: ({year}, {nomenclature})")
 
     (n1, n2) = nomenclature.split("-", 1)
     pdc_path = pdcs_dpath / year / n1 / n2 / "planDeCompte.xml"
@@ -197,7 +197,7 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
             nomenclature=nomenclature, pdcs_dpath=pdcs_dpath
         )
 
-    logging.debug(f"Utilisation du plan de compte situé ici: '{pdc_path}'")
+    logger.debug(f"Utilisation du plan de compte situé ici: '{pdc_path}'")
     return pdc_path
 
 
@@ -277,7 +277,7 @@ def _make_writer(text_io, options: Options):
 def _write_in_tmp(tree: ElementTree, intermediaire_fpath: str):
     tmp = Path(intermediaire_fpath)
     tree.write(tmp, pretty_print=True)  # type: ignore[call-arg]
-    logging.debug(f"Ecriture du totem transformé dans {tmp}")
+    logger.debug(f"Ecriture du totem transformé dans {tmp}")
 
 
 def _parse_annee_exercice(annee: Optional[str]) -> int:
