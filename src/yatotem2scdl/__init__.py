@@ -1,4 +1,6 @@
 import logging
+logger = logging.getLogger(__name__)
+
 from .exceptions import (
     ConversionErreur,
     ExtractionMetadataErreur,
@@ -19,5 +21,3 @@ from .data_structures import (
 from .conversion import (
     ConvertisseurTotemBudget
 )
-
-logger = logging.getLogger(__name__)
