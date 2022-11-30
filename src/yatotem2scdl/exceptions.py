@@ -61,13 +61,13 @@ class AnneeExerciceInvalideErreur(TotemInvalideErreur):
     """Levée lorsque l'année d'exercice d'un fichier totem est invalide"""
 
     def __init__(self, annee: Optional[str]) -> None:
-        message = f"L'année {annee} est invalie"
+        message = f"L'année {annee} est invalide"
         super().__init__(message)
 
 
 class EtapeBudgetaireInconnueErreur(TotemInvalideErreur):
     """Levée lorsque l'étape budgetaire d'un fichier totem est invalide"""
 
-    def __init__(self, annee: Optional[str]) -> None:
-        message = f"L'année {annee} est invalie"
+    def __init__(self, etape_str: Optional[str]) -> None:
+        message = f"L'étape budgetaire {etape_str} est invalide"
         super().__init__(message)

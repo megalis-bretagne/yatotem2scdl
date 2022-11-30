@@ -13,7 +13,7 @@ from .exceptions import (
 )
 
 from .data_structures import (
-    EtapeBudgetaire,
+    EtapeBudgetaire, EtapeBudgetaireStrInvalideError,
     TotemBudgetMetadata,
     Options
 )

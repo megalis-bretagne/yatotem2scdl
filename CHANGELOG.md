@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.0.18] - 2022-11-30
+
+### Changed
+
+- la méthode `EtapeBudgetaire.from_str` renvoit une exception `EtapeBudgetaireStrInvalideError` au lieu d'une exception spécifique au parsing de fichier totem.
+
 ## [0.0.17] - 2022-11-24
 
 ### Added

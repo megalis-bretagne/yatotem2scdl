@@ -1,7 +1,7 @@
 """Tests concernant l'enum EtatBudgetaire"""
 
 import pytest
-from yatotem2scdl import EtapeBudgetaire, EtapeBudgetaireInconnueErreur
+from yatotem2scdl import EtapeBudgetaire, EtapeBudgetaireStrInvalideError
 
 
 def test_construction():
@@ -10,7 +10,7 @@ def test_construction():
 
 
 def test_construction_mauvaise_chaine():
-    with pytest.raises(EtapeBudgetaireInconnueErreur):
+    with pytest.raises(EtapeBudgetaireStrInvalideError):
         EtapeBudgetaire.from_str("chaine sans correspondance")
 
 

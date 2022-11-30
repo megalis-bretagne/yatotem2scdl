@@ -3,7 +3,11 @@ from enum import Enum
 from pathlib import Path
 from typing import Optional
 
-from .exceptions import EtapeBudgetaireInconnueErreur
+class EtapeBudgetaireStrInvalideError(Exception):
+    """Levée lorsqu'une chaine ne correspond pas à une étape budgetaire valide"""
+
+    def __init__(self, etape_str: Optional[str]):
+        self.message = f"L'étape budgetaire {etape_str} est invalide"
 
 
 class EtapeBudgetaire(Enum):
@@ -38,9 +42,17 @@ class EtapeBudgetaire(Enum):
 
     @staticmethod
     def from_str(chaine: str):
-        """
+        """ Parse la chaine donnée pour en faire une étape budgetaire.
+
+        Chaque étape budgétaire accepte une liste d'alias comme chaine valide. 
+        Par exemple, pour le compte administratif, les valeurs acceptées sont:
+
+         - compte administratif
+         - ca
+         - administratif
+
         Raises:
-            EtapeBudgetaireInconnueErreur: en cas de chaine invalide
+            EtapeBudgetaireStrInvalideError: en cas de chaine invalide
         """
         if chaine in EtapeBudgetaire.__primitif_aliases__:
             return EtapeBudgetaire.PRIMITIF
@@ -51,7 +63,7 @@ class EtapeBudgetaire(Enum):
         elif chaine in EtapeBudgetaire.__ca_aliases__:
             return EtapeBudgetaire.COMPTE_ADMIN
         else:
-            raise EtapeBudgetaireInconnueErreur(chaine)
+            raise EtapeBudgetaireStrInvalideError(chaine)
 
     def to_scdl_compatible_str(self):
         if self is EtapeBudgetaire.PRIMITIF:
