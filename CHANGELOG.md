@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.0.19] - 2022-12-18
+
+### Changed
+
+- `totem_budget_metadata` sax parser, meilleures perfs
+
 ## [0.0.18] - 2022-11-30
 
 ### Changed

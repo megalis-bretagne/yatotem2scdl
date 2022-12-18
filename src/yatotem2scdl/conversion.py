@@ -7,6 +7,9 @@ from yatotem2scdl import logger
 
 import os
 import csv
+import xml.sax
+
+from .TotemMetadataHandler import TotemMetadataHandler, FinishedParsing
 
 from yatotem2scdl.exceptions import (
     AnneeExerciceInvalideErreur,
@@ -28,7 +31,7 @@ _PDC_VIDE = Path(os.path.dirname(__file__)) / "planDeCompte-vide.xml"
 
 
 class ConvertisseurTotemBudget:
-    def __init__(self, xslt_budget: Path = None):
+    def __init__(self, xslt_budget: Optional[Path] = None):
         """Convertisseur de fichier totem budget vers SCDL
 
         Args:
@@ -91,20 +94,29 @@ class ConvertisseurTotemBudget:
         totem_fpath: Path,
         pdcs_dpath: Path,
     ) -> TotemBudgetMetadata:
-        def _extraire_pdc_for_metadata(tree, pdcs_dpath):
+        def _pdc_path(nomenclature, annee, pdcs_dpath):
             try:
-                pdc_path = _extraire_plan_de_compte(tree, pdcs_dpath)
+                pdc_path = _calculer_pdc_from_totem_values(
+                    nomenclature, annee, pdcs_dpath
+                )
                 return pdc_path
             except TotemInvalideErreur as err:
                 logger.warning(str(err))
                 return None
 
         try:
-            totem_tree: ElementTree = etree.parse(totem_fpath)
-            pdc_path = _extraire_pdc_for_metadata(totem_tree, pdcs_dpath)
-            code_etape = _xpath_totem_budget_etape(totem_tree)
-            id_etab = _xpath_totem_budget_id_etab(totem_tree)
-            annee = _xpath_totem_budget_annee_exercice(totem_tree)
+            handler = TotemMetadataHandler()
+            try:
+                xml.sax.parse(str(totem_fpath), handler)
+            except FinishedParsing:
+                pass
+
+            nomenclature = handler.nomenclature
+            code_etape = handler.code_etape
+            id_etab = handler.id_etab
+            annee = handler.annee
+
+            pdc_path = _pdc_path(nomenclature, annee, pdcs_dpath)
 
             etape = _parse_code_etape(code_etape)
             annee_i = _parse_annee_exercice(annee)
@@ -160,11 +172,15 @@ class ConvertisseurTotemBudget:
         return transformed_tree
 
 
-def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
-    """Extrait le plan de compte à partir d'un xml totem
+def _calculer_pdc_from_totem_values(
+    nomenclature: Optional[str],
+    annee: Optional[str],
+    pdcs_dpath: Path,
+) -> Path:
+    """Calcule le chemin du plan de compte depuis une nomenclature et une annee
 
     Args:
-        totem_tree (ElementTree): XML correspondant au fichier budget totem
+        nomenclature (str): Valeur du tag Nomenclature dans un fichier totem
         pdcs_dpath (Path): Chemin vers les plans de comptes
 
     Raises:
@@ -174,23 +190,15 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
     Returns:
         Path: Chemin vers le plan de compte correspondant
     """
-
-    namespaces = _namespaces()
-
-    nomenclature: Optional[str] = totem_tree.findall(
-        "/db:Budget/db:EnTeteBudget/db:Nomenclature", namespaces
-    )[0].attrib.get("V")
-    year: Optional[str] = _xpath_totem_budget_annee_exercice(totem_tree)
-
     if nomenclature is None:
         raise NomenclatureInvalideErreur(None, pdcs_dpath)  # type: ignore
-    if year is None:
-        raise AnneeExerciceInvalideErreur(year)
+    if annee is None:
+        raise AnneeExerciceInvalideErreur(annee)
 
-    logger.debug(f"Version de plan de compte trouvée: ({year}, {nomenclature})")
+    logger.debug(f"Version de plan de compte trouvée: ({annee}, {nomenclature})")
 
     (n1, n2) = nomenclature.split("-", 1)
-    pdc_path = pdcs_dpath / year / n1 / n2 / "planDeCompte.xml"
+    pdc_path = pdcs_dpath / annee / n1 / n2 / "planDeCompte.xml"
 
     if not pdc_path.is_file():
         raise NomenclatureInvalideErreur(
@@ -199,6 +207,18 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
 
     logger.debug(f"Utilisation du plan de compte situé ici: '{pdc_path}'")
     return pdc_path
+
+
+def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
+
+    namespaces = _namespaces()
+
+    nomenclature: Optional[str] = totem_tree.findall(
+        "/db:Budget/db:EnTeteBudget/db:Nomenclature", namespaces
+    )[0].attrib.get("V")
+    year: Optional[str] = _xpath_totem_budget_annee_exercice(totem_tree)
+
+    return _calculer_pdc_from_totem_values(nomenclature, year, pdcs_dpath)
 
 
 def _xpath_totem_budget_annee_exercice(totem_tree: ElementTree) -> Optional[str]:
@@ -210,30 +230,6 @@ def _xpath_totem_budget_annee_exercice(totem_tree: ElementTree) -> Optional[str]
         return None
     year: Optional[str] = year_elmt.attrib.get("V")
     return year
-
-
-def _xpath_totem_budget_id_etab(totem_tree: ElementTree) -> Optional[str]:
-
-    namespaces = _namespaces()
-    id_etab_elmt = totem_tree.find("/db:Budget/db:EnTeteBudget/db:IdEtab", namespaces)
-    if id_etab_elmt is None:
-        return None
-    id_etab: Optional[str] = id_etab_elmt.attrib.get("V")
-    return id_etab
-
-
-def _xpath_totem_budget_etape(totem_tree: ElementTree) -> Optional[str]:
-    namespaces = _namespaces()
-
-    nat_dec_elmt = totem_tree.find("//db:Budget/db:BlocBudget/db:NatDec", namespaces)
-    if nat_dec_elmt is None:
-        return None
-
-    code_etape = nat_dec_elmt.attrib.get("V")
-    if code_etape is None:
-        return None
-
-    return code_etape
 
 
 def _namespaces() -> dict[str, str]:

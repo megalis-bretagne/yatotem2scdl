@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yatotem2scdl"
-version = "0.0.18"
+version = "0.0.19"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["lxml"]
@@ -14,7 +14,8 @@ yatotem2scdl = "yatotem2scdl.main:main"
 
 
 [project.optional-dependencies]
-dev = ["build", "black", "mypy", "pytest", "pytest-watch", "csv-diff", "twine"]
+dev = ["build", "black", "mypy", "twine"]
+test = ["pytest", "pytest-watch", "csv-diff"]
 
 [tool.setuptools]
 include-package-data = true
