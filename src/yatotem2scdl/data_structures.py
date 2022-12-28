@@ -83,7 +83,7 @@ class EtapeBudgetaire(Enum):
         return self.to_scdl_compatible_str()
 
 
-@dataclass()
+@dataclass(eq=True, frozen=True)
 class TotemBudgetMetadata:
     annee_exercice: int  # Année d'exercice
     id_etablissement: int  # ID de l'établissement, son SIRET

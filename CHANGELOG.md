@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.0.20]
+
+### Changed
+
+- `TotemBudgetMetadata` est maintenant immutable
+
 ## [0.0.19] - 2022-12-18
 
 ### Changed
