@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.0.21]
+
+### Added
+
+- `TotemBudgetMetadata` detient maintenant la date de scellement
+
 ## [0.0.20]
 
 ### Changed

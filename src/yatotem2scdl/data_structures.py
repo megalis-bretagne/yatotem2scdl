@@ -3,6 +3,8 @@ from enum import Enum
 from pathlib import Path
 from typing import Optional
 
+from datetime import datetime
+
 class EtapeBudgetaireStrInvalideError(Exception):
     """Levée lorsqu'une chaine ne correspond pas à une étape budgetaire valide"""
 
@@ -82,12 +84,16 @@ class EtapeBudgetaire(Enum):
     def __str__(self) -> str:
         return self.to_scdl_compatible_str()
 
+@dataclass(eq=True, frozen= True)
+class TotemBudgetScellement:
+    date: datetime
 
 @dataclass(eq=True, frozen=True)
 class TotemBudgetMetadata:
     annee_exercice: int  # Année d'exercice
     id_etablissement: int  # ID de l'établissement, son SIRET
     etape_budgetaire: EtapeBudgetaire  # Etape budgetaire concernée par le document
+    scellement: Optional[TotemBudgetScellement] # Informations de la balise scellement
     plan_de_compte: Optional[
         Path
     ]  # Chemin vers le plan de compte concernant ce fichier totem. Peut être None.

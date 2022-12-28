@@ -12,6 +12,7 @@ class TotemMetadataHandler(ContentHandler):
         self.code_etape: Optional[str] = None
         self.id_etab: Optional[str] = None
         self.annee: Optional[str] = None
+        self.scellement_date: Optional[str] = None
 
     def startElement(self, name, attrs):
         if name == "Nomenclature":
@@ -22,6 +23,8 @@ class TotemMetadataHandler(ContentHandler):
             self.id_etab = attrs.getValueByQName("V")
         elif name == "Exer":
             self.annee = attrs.getValueByQName("V")
+        elif name == "Scellement":
+            self.scellement_date = attrs.getValueByQName("date")
         else:
             return
 
@@ -33,5 +36,6 @@ class TotemMetadataHandler(ContentHandler):
             and self.code_etape is not None
             and self.id_etab is not None
             and self.annee is not None
+            and self.scellement_date is not None
         ):
             raise FinishedParsing()

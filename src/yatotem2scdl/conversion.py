@@ -8,6 +8,7 @@ from yatotem2scdl import logger
 import os
 import csv
 import xml.sax
+from datetime import datetime
 
 from .TotemMetadataHandler import TotemMetadataHandler, FinishedParsing
 
@@ -22,7 +23,12 @@ from yatotem2scdl.exceptions import (
     TotemInvalideErreur,
 )
 
-from yatotem2scdl.data_structures import EtapeBudgetaire, Options, TotemBudgetMetadata
+from yatotem2scdl.data_structures import (
+    EtapeBudgetaire,
+    Options,
+    TotemBudgetMetadata,
+    TotemBudgetScellement,
+)
 
 from lxml import etree
 
@@ -122,10 +128,19 @@ class ConvertisseurTotemBudget:
             annee_i = _parse_annee_exercice(annee)
             id_etab_siret = _parse_siret(id_etab)
 
+            scellement_date = _parse_scellement_annee(handler.scellement_date)
+
+            metadata_scellement = (
+                TotemBudgetScellement(scellement_date)
+                if scellement_date is not None
+                else None
+            )
+
             return TotemBudgetMetadata(
                 annee_exercice=annee_i,
                 etape_budgetaire=etape,
                 id_etablissement=id_etab_siret,
+                scellement=metadata_scellement,
                 plan_de_compte=pdc_path,
             )
 
@@ -315,3 +330,9 @@ def _parse_code_etape(code_etape: Optional[str]) -> EtapeBudgetaire:
         return EtapeBudgetaire(code_etape_i)
     except Exception as err:
         raise EtapeBudgetaireInconnueErreur(code_etape) from err
+
+
+def _parse_scellement_annee(date: Optional[str]) -> Optional[datetime]:
+    if date is None:
+        return None
+    return datetime.fromisoformat(date)

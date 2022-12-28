@@ -9,6 +9,7 @@ def metadata2():
         2021,
         21220282400018,
         EtapeBudgetaire.PRIMITIF,
+        scellement=None,
         plan_de_compte=None
     )
 
@@ -18,6 +19,7 @@ def metadata1():
         2022,
         21220282400018,
         EtapeBudgetaire.COMPTE_ADMIN,
+        scellement=None,
         plan_de_compte=None
     )
 
