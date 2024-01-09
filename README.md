@@ -11,7 +11,7 @@ En effet, le projet de base cité plus haut n'est pas conçu pour être utilisé
 
 - Actuellement, seuls les budgets sont supportés.
 - Les plans de comptes ne sont pas fournis avec le package. 
-  - [norme-budgetaire-downloader](https://gitlab.com/datafin/totem/-/tree/master/norme-budgetaire-downloader)
+  - [norme-budgetaire-downloader](https://gitlab.com/opendatafrance/totem/-/tree/main/norme-budgetaire-downloader?ref_type=heads)
 
 ## Quickstart
 
@@ -61,3 +61,18 @@ Pour upload sur un repository PyPI:
 python -m build
 twine upload --repository-url https://<REPO_URL>/repository/pypi-hosted/ dist/*
 ```
+
+## Générer les plans de comptes
+
+**Testé avec nodejs v16.20.2 et python 3.11.5**
+
+- Cloner le repository [norme-budgetaire-downloader](https://gitlab.com/opendatafrance/totem/-/tree/main/norme-budgetaire-downloader?ref_type=heads)
+
+- executer:
+```
+npm ci
+npm run build
+npm run run # Télécharge les plans de compte dans le dossier output
+```
+
+- Copier coller les plans de compte dans le dossier correspondant.
