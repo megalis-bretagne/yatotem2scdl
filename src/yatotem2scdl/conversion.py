@@ -48,6 +48,20 @@ class ConvertisseurTotemBudget:
             xslt_budget = _BUDGET_XSLT
         self.__xslt_budget = xslt_budget
 
+    def __document_budgetaire_tree(self, totem_fpath: Path) -> ElementTree:
+        tree = etree.parse(totem_fpath)
+
+        documents_budgetaires = tree.findall('{*}DocumentBudgetaire')
+        document_budgetaire_tree = None
+        if len(documents_budgetaires) > 1:
+            raise TotemInvalideErreur("Plusieurs noeuds DocumentBudgetaire présent dans le XML")
+        if len(documents_budgetaires) == 1:
+            document_budgetaire_tree = documents_budgetaires[0]
+        if len(documents_budgetaires) == 0:
+            document_budgetaire_tree = tree
+
+        return document_budgetaire_tree
+
     def totem_budget_vers_scdl(
         self,
         totem_fpath: Path,
@@ -73,8 +87,8 @@ class ConvertisseurTotemBudget:
                 return pdc_path
             except TotemInvalideErreur:
                 logger.warning(
-                    f"Impossible de trouver un plan de compte pour le fichier totem."
-                    f" Le SCDL sera probablement incomplet"
+                    "Impossible de trouver un plan de compte pour le fichier totem."
+                    " Le SCDL sera probablement incomplet"
                 )
                 return None
 
@@ -83,10 +97,10 @@ class ConvertisseurTotemBudget:
 
         logger.info(f"Conversion du fichier budget totem: {totem_fpath}")
         try:
-            totem_tree: ElementTree = etree.parse(totem_fpath)
-            pdc_path = _extraire_pdc_for_conversion(totem_tree, pdcs_dpath)
+            docBudgetaireTree: ElementTree = self.__document_budgetaire_tree(totem_fpath)
+            pdc_path = _extraire_pdc_for_conversion(docBudgetaireTree, pdcs_dpath)
             transformed_tree = self._transform(
-                totem_tree=totem_tree, pdc_fpath=pdc_path, options=options
+                totem_tree=docBudgetaireTree, pdc_fpath=pdc_path, options=options
             )
             _xml_to_csv(transformed_tree, output, options)
 
@@ -229,7 +243,7 @@ def _extraire_plan_de_compte(totem_tree: ElementTree, pdcs_dpath: Path) -> Path:
     namespaces = _namespaces()
 
     nomenclature: Optional[str] = totem_tree.findall(
-        "/db:Budget/db:EnTeteBudget/db:Nomenclature", namespaces
+        "./db:Budget/db:EnTeteBudget/db:Nomenclature", namespaces
     )[0].attrib.get("V")
     year: Optional[str] = _xpath_totem_budget_annee_exercice(totem_tree)
 
@@ -240,7 +254,7 @@ def _xpath_totem_budget_annee_exercice(totem_tree: ElementTree) -> Optional[str]
 
     namespaces = _namespaces()
 
-    year_elmt = totem_tree.find("/db:Budget/db:BlocBudget/db:Exer", namespaces)
+    year_elmt = totem_tree.find("./db:Budget/db:BlocBudget/db:Exer", namespaces)
     if year_elmt is None:
         return None
     year: Optional[str] = year_elmt.attrib.get("V")
@@ -270,10 +284,10 @@ def _xml_to_csv(tree: ElementTree, text_io: TextIOBase, options: Options):
     writer = _make_writer(text_io, options)
 
     if options.inclure_header_csv:
-        header_names = [elt.attrib["name"] for elt in tree.iterfind("/header/column")]
+        header_names = [elt.attrib["name"] for elt in tree.iterfind("./header/column")]
         writer.writerow(header_names)
 
-    for row_tag in tree.iterfind("/data/row"):
+    for row_tag in tree.iterfind("./data/row"):
         row_data = [cell.attrib["value"] for cell in row_tag.iter("cell")]
         writer.writerow(row_data)
 

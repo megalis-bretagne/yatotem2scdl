@@ -35,12 +35,21 @@ class EtapeBudgetaire(Enum):
         "ca",
         "administratif",
     ]
+    __cfu_aliases__ = [
+        "CFU",
+        "cfu",
+        "Cfu",
+        "Compte Financier Unique",
+        "compte financier unique",
+        "Compte financier unique",
+    ]
 
     # Les valeurs de l'enum correspondent au code NatDec des fichiers totem
     PRIMITIF = 1
     DECISION_MODIF = 2
     BUDGET_SUPP = 3
     COMPTE_ADMIN = 9
+    CFU = 10
 
     @staticmethod
     def from_str(chaine: str):
@@ -64,6 +73,8 @@ class EtapeBudgetaire(Enum):
             return EtapeBudgetaire.DECISION_MODIF
         elif chaine in EtapeBudgetaire.__ca_aliases__:
             return EtapeBudgetaire.COMPTE_ADMIN
+        elif chaine in EtapeBudgetaire.__cfu_aliases__:
+            return EtapeBudgetaire.CFU
         else:
             raise EtapeBudgetaireStrInvalideError(chaine)
 

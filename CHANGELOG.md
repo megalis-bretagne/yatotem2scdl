@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.0]
+
+### Added
+
+- Support du format `DocumentFinancierUnique`
+
 ## [0.0.22]
 
 ### Modifié
