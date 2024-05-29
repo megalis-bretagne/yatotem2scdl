@@ -27,7 +27,7 @@ def test_generation(totem_path: Path, expected_path: Path):
     convert_options_conf = totem_path.parent / "convert-options.json"
 
     if xslt_custom.exists():
-        print(f"On utilise un totem2xmlcsv custom")
+        print("On utilise un totem2xmlcsv custom")
         convertisseur = ConvertisseurTotemBudget(xslt_budget=xslt_custom)
     else:
         convertisseur = ConvertisseurTotemBudget()
