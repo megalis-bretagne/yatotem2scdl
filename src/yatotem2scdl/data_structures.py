@@ -87,12 +87,17 @@ class EtapeBudgetaire(Enum):
             return EtapeBudgetaire.__supplementaire_aliases__[0]
         elif self is EtapeBudgetaire.COMPTE_ADMIN:
             return EtapeBudgetaire.__ca_aliases__[0]
+        elif self is EtapeBudgetaire.CFU:
+            return EtapeBudgetaire.__ca_aliases__[0] # XXX: volontaire. Le SCDL n'a pas de type CFU - on utilise donc CA
         else:
             assert (
                 False
             ), "Erreur de programmation, merci de bien utiliser l'enum EtapeBudgetaire"
 
+
     def __str__(self) -> str:
+        if self is EtapeBudgetaire.CFU:
+            return EtapeBudgetaire.__cfu_aliases__[0]
         return self.to_scdl_compatible_str()
 
 @dataclass(eq=True, frozen= True)

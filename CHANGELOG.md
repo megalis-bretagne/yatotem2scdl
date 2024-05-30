@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.2]
+
+### Corrigé
+
+- Gestion correcte du `NatDec` du `CFU` pour le SCDL.
+
 ## [0.1.1]
 
 ### Added
