@@ -5,6 +5,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.1]
+
+### Added
+
+- Ajout de tests
+
 ## [0.1.0]
 
 ### Added
