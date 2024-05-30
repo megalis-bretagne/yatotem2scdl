@@ -1,6 +1,7 @@
 from genericpath import isdir
 from pathlib import Path
 import pytest
+import time
 
 from yatotem2scdl import (
     ConvertisseurTotemBudget,
@@ -19,7 +20,6 @@ from data import examples_directories
 @pytest.fixture
 def _convertisseur() -> ConvertisseurTotemBudget:
     return ConvertisseurTotemBudget()
-
 
 @pytest.mark.parametrize(
     "totem_path",
@@ -64,6 +64,21 @@ def test_parse_metadata_of_cfu(_convertisseur: ConvertisseurTotemBudget):
     assert str(metadata.id_etablissement) == "21560134500014"
     assert "M57/M57_A" in str(metadata.plan_de_compte)
 
+def test_parse_metadata_performance(_convertisseur: ConvertisseurTotemBudget):
+    """
+    C'est un smoke test pour vérifier que la lecture des metadata reste relativement performante.
+    """
+    totem_filep = EXTRACT_METADATA_PATH / "totem_valid_huge.xml"
+
+    start = time.perf_counter_ns()
+    _convertisseur.totem_budget_metadata(
+        totem_filep, pdcs_dpath=PLANS_DE_COMPTE_PATH
+    )
+    end = time.perf_counter_ns()
+    elapsed_ns = end - start
+    
+    milli = 1_000_000
+    assert elapsed_ns < (80*milli), "Parser les metadata doit être une opération relativement performante."
 
 def test_parse_metadata_mauvais_siret(_convertisseur: ConvertisseurTotemBudget):
 
