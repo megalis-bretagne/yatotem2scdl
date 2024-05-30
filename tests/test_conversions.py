@@ -11,12 +11,12 @@ import pytest
 from yatotem2scdl import ConvertisseurTotemBudget, Options
 
 from data import PLANS_DE_COMPTE_PATH
-from data import test_case_dirs
+from data import examples_directories
 
 
 @pytest.mark.parametrize(
     "totem_path, expected_path",
-    [(d / "totem.xml", d / "expected.csv") for d in test_case_dirs() if isdir(d)],
+    [(d / "totem.xml", d / "expected.csv") for d in examples_directories() if isdir(d)],
 )
 def test_generation(totem_path: Path, expected_path: Path):
 

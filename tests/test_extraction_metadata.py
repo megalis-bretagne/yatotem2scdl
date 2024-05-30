@@ -2,8 +2,6 @@ from genericpath import isdir
 from pathlib import Path
 import pytest
 
-import pytest
-
 from yatotem2scdl import (
     ConvertisseurTotemBudget,
     AnneeExerciceInvalideErreur,
@@ -11,10 +9,11 @@ from yatotem2scdl import (
     ExtractionMetadataErreur,
     SiretInvalideErreur,
     TotemInvalideErreur,
+    EtapeBudgetaire,
 )
 
 from data import PLANS_DE_COMPTE_PATH, EXTRACT_METADATA_PATH
-from data import test_case_dirs
+from data import examples_directories
 
 
 @pytest.fixture
@@ -24,7 +23,7 @@ def _convertisseur() -> ConvertisseurTotemBudget:
 
 @pytest.mark.parametrize(
     "totem_path",
-    [(d / "totem.xml") for d in test_case_dirs() if isdir(d)],
+    [(d / "totem.xml") for d in examples_directories() if isdir(d)],
 )
 def test_parse_metadata_smoke(
     _convertisseur: ConvertisseurTotemBudget, totem_path: Path
@@ -40,6 +39,30 @@ def test_parse_metadata_smoke(
     assert metadata.id_etablissement is not None
 
     # Le plan de compte peut etre None
+
+def test_parse_metadata_of_ca(_convertisseur: ConvertisseurTotemBudget):
+    totem_filep = EXTRACT_METADATA_PATH / "totem_ca_valide.xml"
+
+    metadata = _convertisseur.totem_budget_metadata(
+        totem_filep, pdcs_dpath=PLANS_DE_COMPTE_PATH
+    )
+    
+    assert metadata.annee_exercice == 2021
+    assert metadata.etape_budgetaire == EtapeBudgetaire.COMPTE_ADMIN
+    assert str(metadata.id_etablissement) == "22560001400016"
+    assert "M57/M57/" in str(metadata.plan_de_compte)
+
+def test_parse_metadata_of_cfu(_convertisseur: ConvertisseurTotemBudget):
+    totem_filep = EXTRACT_METADATA_PATH / "totem_cfu_valide.xml"
+
+    metadata = _convertisseur.totem_budget_metadata(
+        totem_filep, pdcs_dpath=PLANS_DE_COMPTE_PATH
+    )
+    
+    assert metadata.annee_exercice == 2023
+    assert metadata.etape_budgetaire == EtapeBudgetaire.CFU
+    assert str(metadata.id_etablissement) == "21560134500014"
+    assert "M57/M57_A" in str(metadata.plan_de_compte)
 
 
 def test_parse_metadata_mauvais_siret(_convertisseur: ConvertisseurTotemBudget):

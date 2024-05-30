@@ -16,7 +16,7 @@ def additionnal_exemples_path() -> Optional[Path]:
     return Path(env_dir) if env_dir is not None else None
 
 
-def test_case_dirs() -> list[Path]:
+def examples_directories() -> list[Path]:
     dir_additionnel = additionnal_exemples_path()
     use_case_dirs_1 = [Path(EXEMPLES_PATH) / d for d in os.listdir(EXEMPLES_PATH)]
     use_case_dirs_2 = (
