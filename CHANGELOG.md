@@ -5,11 +5,17 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.4]
+
+### Ajouté
+
+- Ajout des plans de comptes `2025`
+
 ## [0.1.3]
 
 ### Corrigé
 
-- Ajout des plans de comptes `2025`
+- Par défaut, ne tient plus compte des lignes budgetaires "calculated"
 
 
 ## [0.1.2]
